@@ -25,30 +25,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:layout_gravity="left"
             android:layout_marginStart="30dp"
             android:text="@string/welcome_sign_up"
             android:textColor="@color/white"
             android:textSize="30dp"
-            android:textStyle="bold" />
-=======
-            android:text="@string/welcome"
-            android:textColor="@color/white"
-            android:textSize="32dp"
-            android:textStyle="bold"
-            android:layout_gravity="left"
-            android:layout_marginStart="30dp"/>
->>>>>>> fase_2
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:text="@string/title_sign_up"
-=======
-            android:text="@string/sign_up"
->>>>>>> fase_2
             android:textColor="@color/white"
             android:textSize="28dp"
             android:textStyle="italic"
@@ -73,11 +60,7 @@
                 android:id="@+id/signUpName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-<<<<<<< HEAD
                 android:hint="@string/name_sign_up"
-=======
-                android:hint="Nombre"
->>>>>>> fase_2
                 android:textColor="#404040"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -91,11 +74,7 @@
                 android:id="@+id/signUpEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-<<<<<<< HEAD
                 android:hint="@string/email_sign_up"
-=======
-                android:hint="Correo electronico:"
->>>>>>> fase_2
                 android:layout_marginTop="10dp"
                 android:textColor="#404040"/>
 
@@ -112,11 +91,7 @@
                 android:id="@+id/signUpPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-<<<<<<< HEAD
                 android:hint="@string/password_sign_up"
-=======
-                android:hint="Contraseña:"
->>>>>>> fase_2
                 android:layout_marginTop="10dp"
                 android:textColor="#404040"/>
 
@@ -133,11 +108,7 @@
                 android:id="@+id/signUpCPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-<<<<<<< HEAD
                 android:hint="@string/confirm_password_sign_up"
-=======
-                android:hint="Confirmar contraseña"
->>>>>>> fase_2
                 android:layout_marginTop="10dp"
                 android:textColor="#404040"/>
 
@@ -153,13 +124,8 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18sp"
-<<<<<<< HEAD
             android:text="@string/accept_sign_up"
-=======
-            android:text="Sign Up"
->>>>>>> fase_2
             android:textAllCaps="false" />
-
 
     </LinearLayout>
 
@@ -174,11 +140,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:text="@string/label_sign_up"
-=======
-            android:text="Ya tienes una cuenta?"
->>>>>>> fase_2
             android:layout_gravity="center"
             android:textSize="14sp"
             android:textColor="#404040"/>
@@ -187,11 +149,7 @@
             android:id="@+id/SignInText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:text="@string/buttonLabel_signIn_sing_up"
-=======
-            android:text="Sign In"
->>>>>>> fase_2
             android:layout_gravity="center"
             android:textStyle="bold"
             android:textSize="15sp"
