@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FactApp-DSM(Eng)</string>
-    <string name="welcome">Welcome</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="all">TODO</string>
+    <string name="app_name">FactApp-DSM</string>
+    <!--activity_sign_in-->
+    <string name="welcome_sign_in">Welcome</string>
+    <!--activity_sign_up-->
+    <string name="welcome_sign_up">Join our app today</string>
+    <string name="title_sign_up">Sign Up</string>
+    <string name="name_sign_up">Username</string>
+    <string name="email_sign_up">E-mail</string>
+    <string name="password_sign_up">Password</string>
+    <string name="confirm_password_sign_up">Confirm Password...</string>
+    <string name="accept_sign_up">Sign Up</string>
+    <string name="label_sign_up">¿Already have an account?</string>
+    <string name="buttonLabel_signIn_sing_up">Sing in</string>
+    <string name="all">EVERYTHING</string>
     <string name="facebook_app_id">799503694841303</string>
     <string name="fb_login_protocol_scheme">fb799503694841303</string>
     <string name="facebook_client_token">56789</string>
+    <!--activity-main-->
 
 </resources>
