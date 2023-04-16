@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FactApp-DSM</string>
     <string name="all">TODO</string>
@@ -6,7 +7,12 @@
     <string name="facebook_client_token">56789</string>
     <!--activity_sign_in-->
     <string name="welcome_sign_in">Bienvenido</string>
-    <string name="title_sing_in">Inicia Sesión en FactApp</string>
+    <string name="title_sing_in">Digita tu cuenta</string>
+    <string name="email_sign_in">Correo electronico</string>
+    <string name="password_sign_in">Contraseña</string>
+    <string name="accept_sign_in">INGRESAR</string>
+    <string name="label_sign_in">¿Aún no tienes una cuenta?</string>
+    <string name="label_buttonSignUp_sign_in">REGISTRATE</string>
     <!--activity_sign_up-->
     <string name="welcome_sign_up">Únete a nuestra aplicación</string>
     <string name="title_sign_up">Registrarse</string>
@@ -14,9 +20,9 @@
     <string name="email_sign_up">Correo Electrónico</string>
     <string name="password_sign_up">Contraseña</string>
     <string name="confirm_password_sign_up">Confirma la Constraseña…</string>
-    <string name="accept_sign_up">Registrarse</string>
+    <string name="accept_sign_up">REGISTRAR</string>
     <string name="label_sign_up">¿Ya tienes una cuenta?</string>
-    <string name="buttonLabel_signIn_sing_up">Inicia Sesión</string>
+    <string name="buttonLabel_signIn_sign_up">INICIA SESIÓN</string>
 
     <!--activity-main-->
 

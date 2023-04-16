@@ -7,7 +7,12 @@
     <string name="facebook_client_token">56789</string>
     <!--activity_sign_in-->
     <string name="welcome_sign_in">Welcome</string>
-    <string name="title_sing_in">Inicia Sesión en FactApp</string>
+    <string name="title_sing_in">Enter your Account</string>
+    <string name="email_sign_in">Email</string>
+    <string name="password_sign_in">Password</string>
+    <string name="accept_sign_in">SIGN IN</string>
+    <string name="label_sign_in">Don\'t have an account yet?</string>
+    <string name="label_buttonSignUp_sign_in">SIGN UP</string>
     <!--activity_sign_up-->
     <string name="welcome_sign_up">Join our app today</string>
     <string name="title_sign_up">Sign Up</string>
@@ -15,9 +20,9 @@
     <string name="email_sign_up">E-mail</string>
     <string name="password_sign_up">Password</string>
     <string name="confirm_password_sign_up">Confirm Password…</string>
-    <string name="accept_sign_up">Sign Up</string>
-    <string name="label_sign_up">¿Already have an account?</string>
-    <string name="buttonLabel_signIn_sing_up">Sing In</string>
+    <string name="accept_sign_up">SIGN UP</string>
+    <string name="label_sign_up">Already have an account?</string>
+    <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
 
     <!--activity-main-->
 

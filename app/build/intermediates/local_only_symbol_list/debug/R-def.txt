@@ -41,12 +41,14 @@ mipmap google32
 mipmap google64
 mipmap ic_launcher
 mipmap ic_launcher_round
+string accept_sign_in
 string accept_sign_up
 string all
 string app_name
-string buttonLabel_signIn_sing_up
+string buttonLabel_signIn_sign_up
 string confirm_password_sign_up
 string default_web_client_id
+string email_sign_in
 string email_sign_up
 string facebook_app_id
 string facebook_client_token
@@ -57,8 +59,11 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string label_buttonSignUp_sign_in
+string label_sign_in
 string label_sign_up
 string name_sign_up
+string password_sign_in
 string password_sign_up
 string project_id
 string title_sign_up

@@ -149,7 +149,7 @@
             android:id="@+id/SignInText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/buttonLabel_signIn_sing_up"
+            android:text="@string/buttonLabel_signIn_sign_up"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:textSize="15sp"
