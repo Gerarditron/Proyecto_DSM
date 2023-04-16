@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.login_dsm.app-mergeDebugResources-38:/values-vi/values-vi.xml",
+            "outputFile": "com.example.login_dsm.app-mergeDebugResources-39:/values-vi/values-vi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\5c40e4807e465fff08f91870ab42855c\\transformed\\browser-1.4.0\\res\\values-vi\\values-vi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,172,283,397",
-                        "endColumns": "116,110,113,104",
-                        "endOffsets": "167,278,392,497"
-                    },
-                    "to": {
-                        "startLines": "82,85,86,87",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "8454,8728,8839,8953",
-                        "endColumns": "116,110,113,104",
-                        "endOffsets": "8566,8834,8948,9053"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\263e6c55055d4c36f6263fedb88399fb\\transformed\\core-1.9.0\\res\\values-vi\\values-vi.xml",
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\409c06ac2c56a258001c3591973cf142\\transformed\\core-1.9.0\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,24 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\63d7bebf51e7bf998843c45ea3c4b039\\transformed\\play-services-base-18.0.1\\res\\values-vi\\values.xml",
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\0512bc401e954585d97ec8483d21717a\\transformed\\browser-1.4.0\\res\\values-vi\\values-vi.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,291,449,570,675,836,962,1077,1177,1346,1449,1602,1728,1883,2028,2092,2152",
-                        "endColumns": "97,157,120,104,160,125,114,99,168,102,152,125,154,144,63,59,78",
-                        "endOffsets": "290,448,569,674,835,961,1076,1176,1345,1448,1601,1727,1882,2027,2091,2151,2230"
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,172,283,397",
+                        "endColumns": "116,110,113,104",
+                        "endOffsets": "167,278,392,497"
                     },
                     "to": {
-                        "startLines": "64,65,66,67,68,69,70,71,73,74,75,76,77,78,79,80,81",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "6220,6322,6484,6609,6718,6883,7013,7132,7364,7537,7644,7801,7931,8090,8239,8307,8371",
-                        "endColumns": "101,161,124,108,164,129,118,103,172,106,156,129,158,148,67,63,82",
-                        "endOffsets": "6317,6479,6604,6713,6878,7008,7127,7231,7532,7639,7796,7926,8085,8234,8302,8366,8449"
+                        "startLines": "82,85,86,87",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "8454,8728,8839,8953",
+                        "endColumns": "116,110,113,104",
+                        "endOffsets": "8566,8834,8948,9053"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\15ecd07f89e92d59cecd47bd27b63d97\\transformed\\facebook-login-8.2.0\\res\\values-vi\\values-vi.xml",
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\a22a7a6315f0379bdf68a1b5d5e149f4\\transformed\\facebook-login-8.2.0\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\86ed40eafbf6fad11dcdc7f6dd4b27fd\\transformed\\play-services-basement-18.1.0\\res\\values-vi\\values.xml",
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\d1da430621ec1b3d3e14f08edd31c6dc\\transformed\\play-services-base-18.0.1\\res\\values-vi\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,291,449,570,675,836,962,1077,1177,1346,1449,1602,1728,1883,2028,2092,2152",
+                        "endColumns": "97,157,120,104,160,125,114,99,168,102,152,125,154,144,63,59,78",
+                        "endOffsets": "290,448,569,674,835,961,1076,1176,1345,1448,1601,1727,1882,2027,2091,2151,2230"
+                    },
+                    "to": {
+                        "startLines": "64,65,66,67,68,69,70,71,73,74,75,76,77,78,79,80,81",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "6220,6322,6484,6609,6718,6883,7013,7132,7364,7537,7644,7801,7931,8090,8239,8307,8371",
+                        "endColumns": "101,161,124,108,164,129,118,103,172,106,156,129,158,148,67,63,82",
+                        "endOffsets": "6317,6479,6604,6713,6878,7008,7127,7231,7532,7639,7796,7926,8085,8234,8302,8366,8449"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\bcd6e3128d0937bd5ceee27ccd61b98b\\transformed\\play-services-basement-18.1.0\\res\\values-vi\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\32f10b227e1344c3d7a58d9cadabf84d\\transformed\\material-1.8.0\\res\\values-vi\\values-vi.xml",
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\aa2724e4083b8ddd522296013e4e7620\\transformed\\material-1.8.0\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -108,7 +108,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\d5347f7a8fcbe47e0bdfadacca7cba54\\transformed\\appcompat-1.6.1\\res\\values-vi\\values-vi.xml",
+                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\ed3819af41362406a8a7ff1e1744c148\\transformed\\appcompat-1.6.1\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
