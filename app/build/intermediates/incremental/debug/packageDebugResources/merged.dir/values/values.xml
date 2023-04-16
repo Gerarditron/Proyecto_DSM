@@ -11,9 +11,17 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="accept_sign_in">INGRESAR</string>
+    <string name="accept_sign_up">REGISTRAR</string>
     <string name="all">TODO</string>
-    <string name="app_name">FactApp</string>
+    <string name="app_name">FactApp-DSM</string>
+    <string name="buttonLabel_signIn_sign_up">INICIA SESIÓN</string>
+    <string name="button_facebook_sign_in">FACEBOOK</string>
+    <string name="button_google_sign_in">GOOGLE</string>
+    <string name="confirm_password_sign_up">Confirma tu contraseña…</string>
     <string name="default_web_client_id" translatable="false">880073564805-k36pbeavh3tpdm1uq05u40q9rg8g3sjb.apps.googleusercontent.com</string>
+    <string name="email_sign_in">Correo</string>
+    <string name="email_sign_up">Correo Eléctronico</string>
     <string name="facebook_app_id">799503694841303</string>
     <string name="facebook_client_token">56789</string>
     <string name="fb_login_protocol_scheme">fb799503694841303</string>
@@ -35,8 +43,13 @@
     <string name="hintnumberinvoice">Numero de factura</string>
     <string name="hintpass">Contraseña</string>
     <string name="hintprecio">Digite Precio</string>
+    <string name="label_buttonSignUp_sign_in">REGISTRATE</string>
+    <string name="label_sign_in">¿No tienes cuenta todavía?</string>
+    <string name="label_sign_up">¿Ya posees una cuenta?</string>
+    <string name="name_sign_up">Nombre de Usuario</string>
+    <string name="password_sign_in">Contraseña</string>
+    <string name="password_sign_up">Contraseña</string>
     <string name="project_id" translatable="false">login-9618b</string>
-    <string name="sign_up">Sign Up</string>
     <string name="textCarrito">Carrito</string>
     <string name="textInvoice">Factura</string>
     <string name="textProducto">Producto</string>
@@ -48,7 +61,10 @@
     <string name="texttextView">¿No tienes una cuenta?</string>
     <string name="texttextViewReg">¿Ya posees una cuenta?</string>
     <string name="texttextViewRegister">Registrar</string>
-    <string name="welcome">Bienvenido</string>
+    <string name="title_sign_in">Ingresa tu usuario</string>
+    <string name="title_sign_up">Registra tu usuario</string>
+    <string name="welcome_sign_in">Bienvenido</string>
+    <string name="welcome_sign_up">Únete a nuestra aplicación</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>

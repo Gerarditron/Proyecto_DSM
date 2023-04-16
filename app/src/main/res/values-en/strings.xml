@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">FactApp-DSM</string>
     <string name="all">EVERYTHING</string>
     <string name="facebook_app_id">799503694841303</string>
@@ -7,12 +8,14 @@
     <string name="facebook_client_token">56789</string>
     <!--activity_sign_in-->
     <string name="welcome_sign_in">Welcome</string>
-    <string name="title_sing_in">Enter your Account</string>
+    <string name="title_sign_in">Enter your Account</string>
     <string name="email_sign_in">Email</string>
     <string name="password_sign_in">Password</string>
     <string name="accept_sign_in">SIGN IN</string>
     <string name="label_sign_in">Don\'t have an account yet?</string>
     <string name="label_buttonSignUp_sign_in">SIGN UP</string>
+    <string name="button_google_sign_in">GOOGLE</string>
+    <string name="button_facebook_sign_in">FACEBOOK</string>"
     <!--activity_sign_up-->
     <string name="welcome_sign_up">Join our app today</string>
     <string name="title_sign_up">Sign Up</string>
@@ -25,5 +28,34 @@
     <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
 
     <!--activity-main-->
+
+    <!-- EXTRAS -->
+    <string name="welcome">Bienvenido</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="hintemail">Correo Electronico</string>
+    <string name="hintpass">Contraseña</string>
+    <string name="textbtnLogin">Autenticar</string>
+    <string name="texttextView">¿No tienes una cuenta?</string>
+    <string name="texttextViewRegister">Registrar</string>
+    <string name="texttextViewReg">¿Ya posees una cuenta?</string>
+    <string name="textViewLogin">Ingresar</string>
+    <string name="textCarrito">Carrito</string>
+    <string name="hintnombreProd">Nombre de producto</string>
+    <string name="hintnumberinvoice">Numero de factura</string>
+    <string name="hintprecio">Digite Precio</string>
+    <string name="textguardar">Guardar</string>
+    <string name="textcancelar">Cancelar</string>
+    <string name="textcomprar">Comprar</string>
+    <string name="textProducto">Producto</string>
+    <string name="textInvoice">Factura</string>
+    <string name="hintIndicaciones">Indicaciones del producto</string>
+    <string name="hintContraIndicaciones">Contraindicaciones del producto</string>
+    <string name="hintTipo">Tipo Factura</string>
+    <string name="hintFecha">Fecha Factura</string>
+    <string name="hintCliente">Proveedor</string>
+    <string name="hintConcepto">Concepto Factura</string>
+    <string name="hintTotal">Total Factura</string>
+
 
 </resources>

@@ -4,7 +4,7 @@
             "outputFile": "com.example.login_dsm.app-mergeDebugResources-39:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\esteban.gamez\\.gradle\\caches\\transforms-3\\57c441b1e194257b5c6378ef6ab974c8\\transformed\\facebook-common-8.2.0\\res\\values-id\\values-id.xml",
+                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\57c441b1e194257b5c6378ef6ab974c8\\transformed\\facebook-common-8.2.0\\res\\values-id\\values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

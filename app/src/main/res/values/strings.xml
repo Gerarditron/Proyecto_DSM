@@ -1,11 +1,34 @@
 <resources>
-    <string name="app_name">FactApp</string>
-    <string name="welcome">Bienvenido</string>
-    <string name="sign_up">Sign Up</string>
+    <!--ESPANIOL-->
+    <string name="app_name">FactApp-DSM</string>
     <string name="all">TODO</string>
     <string name="facebook_app_id">799503694841303</string>
     <string name="fb_login_protocol_scheme">fb799503694841303</string>
     <string name="facebook_client_token">56789</string>
+    <!--activity_sign_in-->
+    <string name="welcome_sign_in">Bienvenido</string>
+    <string name="title_sign_in">Ingresa tu usuario</string>
+    <string name="email_sign_in">Correo</string>
+    <string name="password_sign_in">Contraseña</string>
+    <string name="accept_sign_in">INGRESAR</string>
+    <string name="label_sign_in">¿No tienes cuenta todavía?</string>
+    <string name="label_buttonSignUp_sign_in">REGISTRATE</string>
+    <string name="button_google_sign_in">GOOGLE</string>
+    <string name="button_facebook_sign_in">FACEBOOK</string>"
+    <!--activity_sign_up-->
+    <string name="welcome_sign_up">Únete a nuestra aplicación</string>
+    <string name="title_sign_up">Registra tu usuario</string>
+    <string name="name_sign_up">Nombre de Usuario</string>
+    <string name="email_sign_up">Correo Eléctronico</string>
+    <string name="password_sign_up">Contraseña</string>
+    <string name="confirm_password_sign_up">Confirma tu contraseña…</string>
+    <string name="accept_sign_up">REGISTRAR</string>
+    <string name="label_sign_up">¿Ya posees una cuenta?</string>
+    <string name="buttonLabel_signIn_sign_up">INICIA SESIÓN</string>
+
+    <!--activity-main-->
+
+    <!-- EXTRAS -->
     <string name="hintemail">Correo Electronico</string>
     <string name="hintpass">Contraseña</string>
     <string name="textbtnLogin">Autenticar</string>
@@ -29,4 +52,6 @@
     <string name="hintCliente">Proveedor</string>
     <string name="hintConcepto">Concepto Factura</string>
     <string name="hintTotal">Total Factura</string>
+
+
 </resources>
