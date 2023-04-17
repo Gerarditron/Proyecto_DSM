@@ -11,9 +11,15 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="accept_sign_in">SIGN IN</string>
+    <string name="accept_sign_up">SIGN UP</string>
     <string name="all">TODO</string>
     <string name="app_name">FactApp</string>
+    <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
+    <string name="confirm_password_sign_up">Confirm Password…</string>
     <string name="default_web_client_id" translatable="false">880073564805-k36pbeavh3tpdm1uq05u40q9rg8g3sjb.apps.googleusercontent.com</string>
+    <string name="email_sign_in">Email</string>
+    <string name="email_sign_up">E-mail</string>
     <string name="facebook_app_id">799503694841303</string>
     <string name="facebook_client_token">56789</string>
     <string name="fb_login_protocol_scheme">fb799503694841303</string>
@@ -35,6 +41,12 @@
     <string name="hintnumberinvoice">Numero de factura</string>
     <string name="hintpass">Contraseña</string>
     <string name="hintprecio">Digite Precio</string>
+    <string name="label_buttonSignUp_sign_in">SIGN UP</string>
+    <string name="label_sign_in">Don\'t have an account yet?</string>
+    <string name="label_sign_up">Already have an account?</string>
+    <string name="name_sign_up">Username</string>
+    <string name="password_sign_in">Password</string>
+    <string name="password_sign_up">Password</string>
     <string name="project_id" translatable="false">login-9618b</string>
     <string name="sign_up">Sign Up</string>
     <string name="textCarrito">Carrito</string>
@@ -48,7 +60,11 @@
     <string name="texttextView">¿No tienes una cuenta?</string>
     <string name="texttextViewReg">¿Ya posees una cuenta?</string>
     <string name="texttextViewRegister">Registrar</string>
+    <string name="title_sign_up">Sign Up</string>
+    <string name="title_sing_in">Enter your Account</string>
     <string name="welcome">Bienvenido</string>
+    <string name="welcome_sign_in">Welcome</string>
+    <string name="welcome_sign_up">Join our app today</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
