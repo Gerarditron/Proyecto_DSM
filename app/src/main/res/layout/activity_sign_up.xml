@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
 
-
     <ProgressBar
         android:id="@+id/SignUpProgress"
         android:layout_width="50dp"
