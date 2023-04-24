@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.login_dsm.app-mergeDebugResources-39:/values-v24/values-v24.xml",
+            "outputFile": "com.example.login_dsm.app-mergeDebugResources-38:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\aa2724e4083b8ddd522296013e4e7620\\transformed\\material-1.8.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\66780b6d0ab0ea838791606c6a5077a2\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\b1d0acd5fc198e352bfe73af0b3d0e94\\transformed\\material-1.8.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,17 +33,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\ed3819af41362406a8a7ff1e1744c148\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\f90842aab1e70823cf8648c25e9680b4\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\3ff4f7e2483217c2249e4647e11d1ac5\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

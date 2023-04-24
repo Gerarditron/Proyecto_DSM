@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.login_dsm.app-mergeDebugResources-39:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.example.login_dsm.app-mergeDebugResources-38:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Velar34\\.gradle\\caches\\transforms-3\\aa2724e4083b8ddd522296013e4e7620\\transformed\\material-1.8.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\b1d0acd5fc198e352bfe73af0b3d0e94\\transformed\\material-1.8.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
