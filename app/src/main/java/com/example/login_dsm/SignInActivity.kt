@@ -121,8 +121,11 @@ class SignInActivity : AppCompatActivity() {
             .requestEmail()
             .build()
         val googleClient = GoogleSignIn.getClient(this,googleConf)
-        val signInIntent = googleClient.signInIntent
-        startActivityForResult(signInIntent,GOOGLE_SIGN_IN)
+        googleClient.signOut().addOnCompleteListener {
+            val signInIntent = googleClient.signInIntent
+            startActivityForResult(signInIntent,GOOGLE_SIGN_IN)
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -165,7 +168,7 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun login(email : String){
-        val intent = Intent(this,MainActivity::class.java).apply {
+        val intent = Intent(this,InvoiceRegister::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
         startActivity(intent)
