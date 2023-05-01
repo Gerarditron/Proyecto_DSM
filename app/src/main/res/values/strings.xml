@@ -27,6 +27,20 @@
     <string name="buttonLabel_signIn_sign_up">INICIA SESIÓN</string>
 
     <!--activity-main-->
+    <string name="label_main_title">FACT-APP</string>
+    <string name="label_main_account_title">VALOR DE CUENTA DE REGISTROS</string>
+    <string name="label_main_user_title">USUARIO: </string>
+    <string name="label_main_email_title">CORREO: </string>
+    <string name="label_main_mov_title">MOVIMIENTOS</string>
+    <string name="label_main_transf_title">TRANSFERENCIAS</string>
+    <string name="label_main_opc1">HISTORIAL DE\nMOVIMIENTOS</string>
+    <string name="label_main_opc2">CLASIFICAR\nMOVIMIENTOS</string>
+    <string name="label_main_opc3">ESTADISTICAS</string>
+    <string name="label_main_opc4">AGREGAR\nFACTURAS</string>
+    <string name="label_main_opc5">HACER UNA\nTRANSACCIÓN</string>
+    <string name="label_main_opc6">EXTRA OPC</string>
+
+
 
     <!-- EXTRAS -->
     <string name="hintemail">Correo Electronico</string>

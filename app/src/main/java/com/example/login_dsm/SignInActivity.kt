@@ -106,10 +106,10 @@ class SignInActivity : AppCompatActivity() {
         }
 
         //Para Facebook
-        btnFacebook.setOnClickListener {
+        /*btnFacebook.setOnClickListener {
 
             btfacebook()
-        }
+        }*/
 
 
 
@@ -174,7 +174,7 @@ class SignInActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun btfacebook(){
+    /*private fun btfacebook(){
         LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
         LoginManager.getInstance().registerCallback(callbackManager,
         object : FacebookCallback<LoginResult>{
@@ -212,7 +212,7 @@ class SignInActivity : AppCompatActivity() {
         }
         startActivity(intent)
 
-    }
+    }*/
 
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!--ENGLISH-->
     <string name="app_name">FactApp-DSM</string>
     <string name="all">EVERYTHING</string>
     <string name="facebook_app_id">799503694841303</string>
@@ -28,11 +28,21 @@
     <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
 
     <!--activity-main-->
+    <string name="label_main_title">FACT-APP</string>
+    <string name="label_main_account_title">AMOUNT REGISTERED IN YOUR ACCOUNT</string>
+    <string name="label_main_user_title">USER: </string>
+    <string name="label_main_email_title">EMAIL: </string>
+    <string name="label_main_mov_title">MOVEMENTS</string>
+    <string name="label_main_transf_title">TRANSFER</string>
+    <string name="label_main_opc1">MOVEMENTS</string>
+    <string name="label_main_opc2">FILTER\nMOVEMENTS</string>
+    <string name="label_main_opc3">ESTATISTICS</string>
+    <string name="label_main_opc4">ADD\nRECEIPT</string>
+    <string name="label_main_opc5">MAKE A\nTRANSFER</string>
+    <string name="label_main_opc6">EXTRA OPC</string>
+
 
     <!-- EXTRAS -->
-    <string name="welcome">Bienvenido</string>
-    <string name="sign_up">Sign Up</string>
-
     <string name="hintemail">Correo Electronico</string>
     <string name="hintpass">Contraseña</string>
     <string name="textbtnLogin">Autenticar</string>
