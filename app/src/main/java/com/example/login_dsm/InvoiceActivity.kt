@@ -17,9 +17,9 @@ import com.example.login_dsm.datos.Invoice
 import com.google.firebase.auth.FirebaseAuth
 
 class InvoiceActivity : AppCompatActivity() {
-    var consultaOrdenada: Query = InvoiceActivity.refInvoice.orderByChild("numero")
+    var consultaOrdenada: Query = InvoiceActivity.refInvoices.orderByChild("numero")
     var invoices: MutableList<Invoice>? = null
-    var listInvoice: ListView? = null
+    var listInvoices: ListView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,10 +28,10 @@ class InvoiceActivity : AppCompatActivity() {
     }
     private fun inicializar() {
         val fab_agregar: FloatingActionButton = findViewById<FloatingActionButton>(R.id.fab_agregar)
-        listInvoice = findViewById<ListView>(R.id.ListInvoice)
+        listInvoices = findViewById<ListView>(R.id.ListInvoices)
 
         // Cuando el usuario haga clic en la lista (para editar registro)
-        listInvoice!!.setOnItemClickListener(object : AdapterView.OnItemClickListener {
+        listInvoices!!.setOnItemClickListener(object : AdapterView.OnItemClickListener {
             override fun onItemClick(adapterView: AdapterView<*>?, view: View, i: Int, l: Long) {
                 val intent = Intent(getBaseContext(), AddInvoiceActivity::class.java)
                 intent.putExtra("accion", "e") // Editar
@@ -49,7 +49,7 @@ class InvoiceActivity : AppCompatActivity() {
 
         // Cuando el usuario hace un LongClic (clic sin soltar elemento por mas de 2 segundos)
         // Es por que el usuario quiere eliminar el registro
-        listInvoice!!.onItemLongClickListener = object : AdapterView.OnItemLongClickListener {
+        listInvoices!!.onItemLongClickListener = object : AdapterView.OnItemLongClickListener {
             override fun onItemLongClick(
                 adapterView: AdapterView<*>?,
                 view: View,
@@ -64,7 +64,7 @@ class InvoiceActivity : AppCompatActivity() {
                 ad.setPositiveButton("Eliminar"
                 ) { dialog, id ->
                     invoices!![position].numero?.let {
-                        InvoiceActivity.refInvoice.child(it).removeValue()
+                        InvoiceActivity.refInvoices.child(it).removeValue()
                     }
                     Toast.makeText(
                         this@InvoiceActivity,
@@ -118,7 +118,7 @@ class InvoiceActivity : AppCompatActivity() {
                     this@InvoiceActivity,
                     invoices as ArrayList<Invoice>
                 )
-                listInvoice!!.adapter = adapter
+                listInvoices!!.adapter = adapter
             }
 
             override fun onCancelled(databaseError: DatabaseError) {}
@@ -127,7 +127,7 @@ class InvoiceActivity : AppCompatActivity() {
 
     companion object {
         var database: FirebaseDatabase = FirebaseDatabase.getInstance()
-        var refInvoice: DatabaseReference = database.getReference("invoice")
+        var refInvoices: DatabaseReference = database.getReference("invoices")
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
@@ -141,9 +141,9 @@ class InvoiceActivity : AppCompatActivity() {
                 }
             }
             R.id.action_option1->{
-                    val intent = Intent(this, InvoiceActivity::class.java)
-                    startActivity(intent)
-                    finish()
+                val intent = Intent(this, InvoiceActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
         return super.onOptionsItemSelected(item)
