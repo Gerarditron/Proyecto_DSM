@@ -11,8 +11,8 @@ import com.google.firebase.database.*
 
 import com.example.login_dsm.datos.Invoice
 
-class AdapterInvoice(private val context: Activity, var invoice: List<Invoice>) :
-    ArrayAdapter<Invoice?>(context, R.layout.invoice_layout, invoice) {
+class AdapterInvoice(private val context: Activity, var invoices: List<Invoice>) :
+    ArrayAdapter<Invoice?>(context, R.layout.invoice_layout, invoices) {
     override fun getView(position: Int, view: View?, parent: ViewGroup): View {
         // Método invocado tantas veces como elementos tenga la coleccion personas
         // para formar a cada item que se visualizara en la lista personalizada
@@ -30,13 +30,13 @@ class AdapterInvoice(private val context: Activity, var invoice: List<Invoice>) 
         val tvConcepto = rowview.findViewById<TextView>(R.id.tvConcepto)
         val tvTotal = rowview.findViewById<TextView>(R.id.tvTotal)
         val tvFoto = rowview.findViewById<ImageView>(R.id.ivFotoProd)
-        tvNumero.text = "Numero : " + invoice[position].numero
-        tvTipo.text = "Tipo : " + invoice[position].tipo
-        tvFecha.text = "Fecha : " + invoice[position].fecha
-        tvCliente.text = "Cliente : " + invoice[position].cliente
-        tvConcepto.text = "Concepto : " + invoice[position].concepto
-        tvTotal.text = "Total : " + invoice[position].total
-        Glide.with(rowview).load(invoice[position].foto).into(tvFoto)
+        tvNumero.text = "Numero : " + invoices[position].numero
+        tvTipo.text = "Tipo : " + invoices[position].tipo
+        tvFecha.text = "Fecha : " + invoices[position].fecha
+        tvCliente.text = "Cliente : " + invoices[position].cliente
+        tvConcepto.text = "Concepto : " + invoices[position].concepto
+        tvTotal.text = "Total : " + invoices[position].total
+        Glide.with(rowview).load(invoices[position].foto).into(tvFoto)
         return rowview
     }
 }

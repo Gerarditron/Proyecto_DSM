@@ -2,16 +2,25 @@ package com.example.login_dsm
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.login_dsm.databinding.ActivityAddInvoiceBinding
+import com.example.login_dsm.databinding.ActivityInvoiceRegisterBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.example.login_dsm.datos.Invoice
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
+import java.util.HashMap
 
 class AddInvoiceActivity : AppCompatActivity() {
     private var edtNumero: EditText? = null
@@ -30,14 +39,53 @@ class AddInvoiceActivity : AppCompatActivity() {
     private var total = ""
     private var accion = ""
     private lateinit var  database:DatabaseReference
+    private val File = 1
+    private val database1 = Firebase.database
+    val myRef = database1.getReference("invoicesPictures")
+    private lateinit var binding: ActivityAddInvoiceBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_invoice)
+        binding = ActivityAddInvoiceBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        binding.btnSubirFoto.setOnClickListener {
+            fileUpload()
+        }
         inicializar()
     }
-
+    fun fileUpload() {
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        intent.type = "*/*"
+        startActivityForResult(intent, File)
+    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == File) {
+            if (resultCode == RESULT_OK) {
+                val FileUri = data!!.data
+                val Folder: StorageReference =
+                    FirebaseStorage.getInstance().getReference().child("invoicesPictures")
+                val file_name: StorageReference = Folder.child("file" + FileUri!!.lastPathSegment)
+                file_name.putFile(FileUri).addOnSuccessListener { taskSnapshot ->
+                    file_name.getDownloadUrl().addOnSuccessListener { uri ->
+                        val hashMap =
+                            HashMap<String, String>()
+                        hashMap["link"] = java.lang.String.valueOf(uri)
+                        myRef.setValue(hashMap)
+                        Log.d("Mensaje", "Se subió correctamente")
+                        Toast.makeText(
+                            this,
+                            "La imagen se subió correctamente!", Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+            }
+        }
+    }
     private fun inicializar() {
         edtNumero = findViewById<EditText>(R.id.edtNumero)
         edtTipo = findViewById<EditText>(R.id.edtTipo)
@@ -113,9 +161,9 @@ class AddInvoiceActivity : AppCompatActivity() {
             if (key == null) {
                 Toast.makeText(this,"Llave vacia", Toast.LENGTH_SHORT).show()
             }
-            val productosValues = invoice.toMap()
+            val invoicesValues = invoice.toMap()
             val childUpdates = hashMapOf<String, Any>(
-                "$numero" to productosValues
+                "$numero" to invoicesValues
             )
             database.updateChildren(childUpdates)
             Toast.makeText(this,"Se actualizo con exito", Toast.LENGTH_SHORT).show()
@@ -123,10 +171,6 @@ class AddInvoiceActivity : AppCompatActivity() {
         finish()
     }
 
-    companion object {
-        var database: FirebaseDatabase = FirebaseDatabase.getInstance()
-        var refHistorialCompras: DatabaseReference = database.getReference("historialcompras")
-    }
     fun cancelar(v: View?) {
         finish()
     }
