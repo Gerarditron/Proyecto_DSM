@@ -77,16 +77,6 @@ class InvoiceRegister : AppCompatActivity() {
                     finish()
                 }
             }
-            R.id.action_option1->{
-                val intent = Intent(this, InvoiceRegister::class.java)
-                startActivity(intent)
-                finish()
-            }
-            R.id.action_option2->{
-                val intent = Intent(this, InvoiceActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
         }
         return super.onOptionsItemSelected(item)
     }

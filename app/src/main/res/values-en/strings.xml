@@ -3,9 +3,7 @@
     <!--ENGLISH-->
     <string name="app_name">FactApp-DSM</string>
     <string name="all">EVERYTHING</string>
-    <string name="facebook_app_id">799503694841303</string>
-    <string name="fb_login_protocol_scheme">fb799503694841303</string>
-    <string name="facebook_client_token">56789</string>
+    <string name="menu_close_session">Close Session</string>
     <!--activity_sign_in-->
     <string name="welcome_sign_in">Welcome</string>
     <string name="title_sign_in">Enter your Account</string>
@@ -26,7 +24,6 @@
     <string name="accept_sign_up">SIGN UP</string>
     <string name="label_sign_up">Already have an account?</string>
     <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
-
     <!--activity-main-->
     <string name="label_main_title">FACT-APP</string>
     <string name="label_main_account_title">AMOUNT REGISTERED IN YOUR ACCOUNT</string>
@@ -40,32 +37,37 @@
     <string name="label_main_opc4">ADD\nRECEIPT</string>
     <string name="label_main_opc5">MAKE A\nTRANSFER</string>
     <string name="label_main_opc6">EXTRA OPC</string>
+    <!--activtiy add invoice-->
+    <string name="label_addinvoice_title">ADD INVOICE/RECEIPT</string>
+    <string name="label_addinvoice_btnUploadImg">UPLOAD IMAGE</string>
+    <string name="label_addinvoice_imgLink">Add Image Link</string>
+    <string name="label_addinvoice_numFact">Invoice Number</string>
+    <string name="label_addinvoice_dateFact">Invoice Date</string>
+    <string name="label_addinvoice_typeFact">Invoice Type</string>
+    <string name="label_addinvoice_provFact">Supplier</string>
+    <string name="label_addinvoice_descripFact">Description</string>
+    <string name="label_addinvoice_valueFact">Value</string>
+    <string name="label_addinvoice_addFact">ADD INVOICE</string>
+    <string name="label_addinvoice_cancelFact">CANCEL</string>
+    <string name="spinner_hint_paymentPost">Select payment/post</string>
+    <string name="spinner_addinvoice_payment">PAYMENT</string>
+    <string name="spinner_addinvoice_post">POST</string>
+    <string name="toast_addinvoice_uploadSuccess">The Receipt was uploaded successfully!</string>
+    <string name="toast_addinvoice_uploadFailed">The Receipt wasn\'t uploaded due to an error!</string>
+    <string name="toast_addinvoice_keyEmpty">The Key doesn\'t exists</string>
+    <string name="toast_addinvoice_updateSuccessful">The Update was Successful!</string>
+    <string name="toast_addinvoice_sessionClosed">Closed Session</string>
+    <string name="toast_addinvoice_foto_upload">¡Foto upload correctly!</string>
+    <!--activity adapter-->
+    <string name="label_adapter_fact_number">Number:</string>
+    <string name="label_adapter_fact_type">Type:</string>
+    <string name="label_adapter_fact_date">Invoice Date:</string>
+    <string name="label_adapter_fact_client">Client:</string>
+    <string name="label_adapter_fact_descrip">Description:</string>
+    <string name="label_adapter_fact_total">Value:</string>
 
 
-    <!-- EXTRAS -->
-    <string name="hintemail">Correo Electronico</string>
-    <string name="hintpass">Contraseña</string>
-    <string name="textbtnLogin">Autenticar</string>
-    <string name="texttextView">¿No tienes una cuenta?</string>
-    <string name="texttextViewRegister">Registrar</string>
-    <string name="texttextViewReg">¿Ya posees una cuenta?</string>
-    <string name="textViewLogin">Ingresar</string>
-    <string name="textCarrito">Carrito</string>
-    <string name="hintnombreProd">Nombre de producto</string>
-    <string name="hintnumberinvoice">Numero de factura</string>
-    <string name="hintprecio">Digite Precio</string>
-    <string name="textguardar">Guardar</string>
-    <string name="textcancelar">Cancelar</string>
-    <string name="textcomprar">Comprar</string>
-    <string name="textProducto">Producto</string>
-    <string name="textInvoice">Factura</string>
-    <string name="hintIndicaciones">Indicaciones del producto</string>
-    <string name="hintContraIndicaciones">Contraindicaciones del producto</string>
-    <string name="hintTipo">Tipo Factura</string>
-    <string name="hintFecha">Fecha Factura</string>
-    <string name="hintCliente">Proveedor</string>
-    <string name="hintConcepto">Concepto Factura</string>
-    <string name="hintTotal">Total Factura</string>
+
 
 
 </resources>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
+ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [androidx.databinding:viewbinding:8.0.0] C:\Users\gerar\.gradle\caches\transforms-3\c82f6a36e6fd22dcac9362c818107846\transformed\viewbinding-8.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-ktx:21.2.0] C:\Users\gerar\.gradle\caches\transforms-3\fb24e411297466b87cbc6bce09e0f234\transformed\firebase-auth-ktx-21.2.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\gerar\.gradle\caches\transforms-3\6d3e3fc9350d26fa1250dcd52804b1f0\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:2:1-20:12
@@ -87,22 +87,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\gerar\.gradle\ca
 MERGED from [androidx.print:print:1.0.0] C:\Users\gerar\.gradle\caches\transforms-3\5439d4161990756b770487415ea963c5\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\gerar\.gradle\caches\transforms-3\1b18357500a1c8d219556b3fb65efb1c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\gerar\.gradle\caches\transforms-3\e1faf2a4c0ea740208afdc0663934d81\transformed\installreferrer-1.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
-INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
+INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
 		INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
+		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
+		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-75:12
+		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:1-52:12
 		INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:2:11-69
@@ -133,7 +133,7 @@ ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:8:9-63
 application
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:11:5-73:19
+ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:11:5-50:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.2.0] C:\Users\gerar\.gradle\caches\transforms-3\fb24e411297466b87cbc6bce09e0f234\transformed\firebase-auth-ktx-21.2.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:21.2.0] C:\Users\gerar\.gradle\caches\transforms-3\fb24e411297466b87cbc6bce09e0f234\transformed\firebase-auth-ktx-21.2.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\gerar\.gradle\caches\transforms-3\6d3e3fc9350d26fa1250dcd52804b1f0\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:10:5-18:19
@@ -288,60 +288,6 @@ MERGED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\gerar\.g
 		ADDED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\gerar\.gradle\caches\transforms-3\c5e659b5f883fc769568771760372aa0\transformed\play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
 	android:name
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:45:13-93
-meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:49:9-51:55
-	android:value
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:51:13-52
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:50:13-58
-meta-data#com.facebook.sdk.ClientToken
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:52:9-54:61
-	android:value
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:54:13-58
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:53:13-56
-activity#com.facebook.FacebookActivity
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:56:9-59:48
-MERGED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:30:9-33:66
-MERGED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:30:9-33:66
-	android:label
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:59:13-45
-	android:configChanges
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:58:13-96
-	android:theme
-		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:33:13-63
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:57:13-57
-activity#com.facebook.CustomTabActivity
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:60:9-72:20
-MERGED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:35:9-49:20
-MERGED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:35:9-49:20
-	tools:node
-		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:38:13-31
-	android:exported
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:62:13-36
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:61:13-58
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:63:13-71:29
-action#android.intent.action.VIEW
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:64:17-69
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:64:25-66
-category#android.intent.category.DEFAULT
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:66:17-76
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:66:27-73
-category#android.intent.category.BROWSABLE
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:67:17-78
-	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:67:27-75
-data
-ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:69:17-70:55
-	android:scheme
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:69:23-72
-	tools:ignore
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:70:21-52
 uses-sdk
 INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml
@@ -590,6 +536,26 @@ ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\cac
 		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
 ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
 	android:excludeFromRecents
@@ -610,10 +576,26 @@ ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\cac
 		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.3.0] C:\Users\gerar\.gradle\caches\transforms-3\05e1d763e3e10cb7037c2f87e8d226d5\transformed\firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:30:9-33:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:32:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:33:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:31:13-57
 activity#com.facebook.CustomTabMainActivity
 ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:34:9-71
 	android:name
 		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:34:19-68
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:35:9-49:20
+	tools:node
+		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:38:13-31
+	android:exported
+		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:36:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
 ADDED from [com.facebook.android:facebook-common:8.2.0] C:\Users\gerar\.gradle\caches\transforms-3\5ede981b531b16ee41039dd3b8bf38f1\transformed\facebook-common-8.2.0\AndroidManifest.xml:39:13-48:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.example.login_dsm+data:scheme:fbconnect

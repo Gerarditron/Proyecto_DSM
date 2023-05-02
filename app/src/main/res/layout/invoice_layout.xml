@@ -7,65 +7,188 @@
     android:layout_margin="10dp"
     android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvNumero"
-        android:background="#ffffff"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
+    <LinearLayout
+        android:id="@+id/lyNumberDate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvTipo"
-        android:background="#ffffff"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/lyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvFecha"
-        android:background="#ffffff"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/tvCliente"
-        android:background="#ffffff"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/tvConcepto"
-        android:background="#ffffff"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/tvTotal"
-        android:background="#ffffff"
-        android:layout_margin="5dp"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/lbInvoiceNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/label_adapter_fact_number"
+                android:textColor="@color/colorDarkBlue"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/tvNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbInvoiceDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/label_adapter_fact_date"
+                android:textColor="@color/colorDarkBlue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbInvoiceSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:text="@string/label_adapter_fact_type"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyClient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbInvoiceClien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:text="@string/label_adapter_fact_client"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyConcept"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbInvoiceConcept"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:text="@string/label_adapter_fact_descrip"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvConcepto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!--
     <ImageView
         android:id="@+id/ivFotoProd"
         android:layout_width="match_parent"
-        android:layout_height="267dp"
+        android:layout_height="98dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/img1"
         tools:srcCompat="@drawable/img1" />
+    -->
+    <LinearLayout
+        android:id="@+id/lyTotal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <View style="@style/Divider"/>
+        <TextView
+            android:id="@+id/lbInvoiceTotal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="@string/label_adapter_fact_total"
+            android:textColor="@color/colorDarkBlue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+
 
 </LinearLayout>

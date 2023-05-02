@@ -12,15 +12,10 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import com.facebook.CallbackManager
-import com.facebook.FacebookCallback
-import com.facebook.FacebookException
-import com.facebook.login.LoginManager
-import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.material.textfield.TextInputLayout
-import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
@@ -36,6 +31,7 @@ class SignInActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("LOGIN","ON CREATE")
         setContentView(R.layout.activity_sign_in)
 
 
@@ -49,7 +45,7 @@ class SignInActivity : AppCompatActivity() {
         val signInBtn : Button = findViewById(R.id.SignInBtn)
         val signInProgressBar : ProgressBar = findViewById(R.id.signInProgressBar)
         val btnGoogle : Button = findViewById<Button>(R.id.SignInGoogleBtn)
-        val btnFacebook : Button = findViewById<Button>(R.id.SignInFacebookBtn)
+
 
 
 
@@ -90,7 +86,7 @@ class SignInActivity : AppCompatActivity() {
             }else{
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
-                        val intent = Intent(this,MainActivity::class.java)
+                        val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     }else{
                         Toast.makeText(this,"Algo ocurrio mal, intentalo de nuevo",Toast.LENGTH_SHORT).show()
@@ -105,11 +101,6 @@ class SignInActivity : AppCompatActivity() {
             btGoogle()
         }
 
-        //Para Facebook
-        /*btnFacebook.setOnClickListener {
-
-            btfacebook()
-        }*/
 
 
 
@@ -174,45 +165,7 @@ class SignInActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    /*private fun btfacebook(){
-        LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
-        LoginManager.getInstance().registerCallback(callbackManager,
-        object : FacebookCallback<LoginResult>{
 
-            override fun onSuccess(result: LoginResult) {
-                result?.let {
-                    val token = it.accessToken
-                    val credential = FacebookAuthProvider.getCredential(token.token)
-
-                    FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
-                        if (it.isSuccessful){
-                            val user = auth.currentUser?.email.toString()
-                            fblogin(user)
-
-                        }else{
-
-                        }
-                    }
-                }
-            }
-
-            override fun onCancel() {
-                TODO("Not yet implemented")
-            }
-
-            override fun onError(error: FacebookException) {
-                Log.d("Tag","Ha ocurrido un error")
-            }
-        })
-    }
-
-    private fun fblogin(email : String){
-        val intent = Intent(this,MainActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        }
-        startActivity(intent)
-
-    }*/
 
 
 

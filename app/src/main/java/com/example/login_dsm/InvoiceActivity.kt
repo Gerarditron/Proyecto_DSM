@@ -28,7 +28,7 @@ class InvoiceActivity : AppCompatActivity() {
     }
     private fun inicializar() {
         val fab_agregar: FloatingActionButton = findViewById<FloatingActionButton>(R.id.fab_agregar)
-        listInvoices = findViewById<ListView>(R.id.ListInvoices)
+        listInvoices = findViewById<ListView>(R.id.ListInvoice)
 
         // Cuando el usuario haga clic en la lista (para editar registro)
         listInvoices!!.setOnItemClickListener(object : AdapterView.OnItemClickListener {
@@ -140,11 +140,7 @@ class InvoiceActivity : AppCompatActivity() {
                     finish()
                 }
             }
-            R.id.action_option1->{
-                val intent = Intent(this, InvoiceActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
+
         }
         return super.onOptionsItemSelected(item)
     }

@@ -12,10 +12,12 @@ class Invoice {
     var concepto: String? = null
     var total: String? = null
     var key: String? = null
-    var per: MutableMap<String, Boolean> = HashMap()
+    var tipoMov: String? = null
+    var userID: String? = null
+    var inv: MutableMap<String, Boolean> = HashMap()
 
     constructor() {}
-    constructor(numero: String?, tipo: String?, fecha: String?, cliente: String?, concepto: String?, total: String?, foto: String?) {
+    constructor(numero: String?, tipo: String?, fecha: String?, cliente: String?, concepto: String?, total: String?, foto: String?, tipoMov: String?, userID: String?) {
         this.numero = numero
         this.tipo = tipo
         this.fecha = fecha
@@ -23,6 +25,8 @@ class Invoice {
         this.concepto = concepto
         this.total = total
         this.foto = foto
+        this.tipoMov = tipoMov
+        this.userID = userID
     }
 
     fun toMap(): Map<String, Any?> {
@@ -35,7 +39,9 @@ class Invoice {
             "total" to total,
             "foto" to foto,
             "key" to key,
-            "per" to per
+            "tipoMov" to tipoMov,
+            "userID" to userID,
+            "inv" to inv
         )
     }
 }

@@ -4,6 +4,10 @@
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "com.example.login_dsm.app-merged_res-40:/layout_invoice_layout.xml.flat",
+        "source": "com.example.login_dsm.app-main-42:/layout/invoice_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
@@ -48,10 +52,6 @@
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_adaptive_fore.png"
     },
     {
-        "merged": "com.example.login_dsm.app-merged_res-40:/layout_activity_main.xml.flat",
-        "source": "com.example.login_dsm.app-main-42:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher_adaptive_back.png.flat",
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\mipmap-xxhdpi\\ic_launcher_adaptive_back.png"
     },
@@ -74,6 +74,10 @@
     {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\drawable_img1.png.flat",
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\drawable\\img1.png"
+    },
+    {
+        "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\layout_spinner_paypost.xml.flat",
+        "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\layout\\spinner_paypost.xml"
     },
     {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\layout_activity_invoice.xml.flat",
