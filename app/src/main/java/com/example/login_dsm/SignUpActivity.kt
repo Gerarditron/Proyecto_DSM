@@ -58,37 +58,37 @@ class SignUpActivity : AppCompatActivity() {
 
             if(name.isEmpty() || email.isEmpty() || password.isEmpty() || cPassword.isEmpty()){
                 if(name.isEmpty()){
-                    signUpName.error = "Ingrese su nombre"
+                    signUpName.error = getString(R.string.msg_singup_enterusername)
                 }
 
                 if(email.isEmpty()){
-                    signUpEmail.error = "Ingrese su correo electronico"
+                    signUpEmail.error = getString(R.string.msg_singin_enteremail)
                 }
 
                 if(password.isEmpty()){
                     signUpPasswordLayout.isPasswordVisibilityToggleEnabled = false
-                    signUpPassword.error = "Ingrese su contraseña"
+                    signUpPassword.error = getString(R.string.msg_singin_enterpassword)
                 }
 
                 if(cPassword.isEmpty()){
                     signUpCPasswordLayout.isPasswordVisibilityToggleEnabled = false
-                    signUpCPassword.error = "Ingrese nuevamente su contraseña"
+                    signUpCPassword.error = getString(R.string.msg_singup_enterpassword_again)
                 }
 
-                Toast.makeText(this,"Ingrese datos validos",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.msg_singin_enterdatacorrectly),Toast.LENGTH_SHORT).show()
                 signUpProgress.visibility = View.GONE
             }else if (!email.matches(emailPattern.toRegex())){
                 signUpProgress.visibility = View.GONE
-                signUpEmail.error = "Ingrese un correo electronico valido"
-                Toast.makeText(this,"Ingrese un correo electronico valido",Toast.LENGTH_SHORT).show()
+                signUpEmail.error = getString(R.string.msg_singin_enteremail_valid)
+                Toast.makeText(this,getString(R.string.msg_singin_enteremail_valid),Toast.LENGTH_SHORT).show()
             }else if (password.length < 6 ){
                 signUpPasswordLayout.isPasswordVisibilityToggleEnabled = false
                 signUpProgress.visibility = View.GONE
-                signUpPassword.error = "Ingrese una contraseña con mas de 6 caracteres"
-                Toast.makeText(this,"Ingrese una contraseña con mas de 6 caracteres",Toast.LENGTH_SHORT).show()
+                signUpPassword.error = getString(R.string.msg_singin_enterpassword_valid)
+                Toast.makeText(this,getString(R.string.msg_singin_enterpassword_valid),Toast.LENGTH_SHORT).show()
             }else if (password != cPassword){
                 signUpProgress.visibility = View.GONE
-                signUpCPassword.error = "Las contraseñas no son iguales, intentelo de nuevo"
+                signUpCPassword.error = getString(R.string.msg_singup_enterpassword_notmatch)
             }else{
                 auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
@@ -101,11 +101,11 @@ class SignUpActivity : AppCompatActivity() {
                                 val intent = Intent(this,SignInActivity::class.java)
                                 startActivity(intent)
                             }else{
-                                Toast.makeText(this,"Algo ocurrio mal, intentalo de nuevo",Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this,getString(R.string.msg_singin_commonerror),Toast.LENGTH_SHORT).show()
                             }
                         }
                     }else{
-                        Toast.makeText(this,"Algo ocurrio mal, intentalo de nuevo",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this,getString(R.string.msg_singin_commonerror),Toast.LENGTH_SHORT).show()
                     }
                 }
             }

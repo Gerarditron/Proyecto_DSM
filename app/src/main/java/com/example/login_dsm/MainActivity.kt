@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
 
         //Consulta a la base - solo los con el userID logeado
         var consultaValue: com.google.firebase.database.Query =  refFact.orderByChild("userID").equalTo(auth.currentUser?.uid)
+        var provider: String
+
         consultaValue.addValueEventListener( object: ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
 
@@ -62,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         actualMoney -= data?.total?.toDouble() ?: 0.0
                     }
-                    Log.d("MAIN",data?.total.toString())
+                    //Log.d("MAIN",data?.total.toString())
                 }
 
                 //Actualizando el valor del string
