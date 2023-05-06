@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import com.example.login_dsm.datos.Users
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -92,6 +93,7 @@ class SignUpActivity : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
                         val databaseRef = database.reference.child("users").child(auth.currentUser!!.uid)
+                        //Agregando el usuario con
                         val users : Users = Users(name, email, auth.currentUser!!.uid)
 
                         databaseRef.setValue(users).addOnCompleteListener {
