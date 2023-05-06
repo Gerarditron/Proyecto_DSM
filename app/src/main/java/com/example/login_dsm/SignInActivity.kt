@@ -11,18 +11,17 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
-import com.facebook.CallbackManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.OAuthProvider
 
 class SignInActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
-    private val callbackManager = CallbackManager.Factory.create()
     private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
     private val GOOGLE_SIGN_IN = 100
 
@@ -31,9 +30,9 @@ class SignInActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("LOGIN","ON CREATE")
         setContentView(R.layout.activity_sign_in)
 
+        val provider = OAuthProvider.newBuilder("github.com")
 
         auth = FirebaseAuth.getInstance()
 
@@ -45,7 +44,7 @@ class SignInActivity : AppCompatActivity() {
         val signInBtn : Button = findViewById(R.id.SignInBtn)
         val signInProgressBar : ProgressBar = findViewById(R.id.signInProgressBar)
         val btnGoogle : Button = findViewById<Button>(R.id.SignInGoogleBtn)
-
+        val btnGithub : Button = findViewById<Button>(R.id.SignInGithubBtn)
 
 
 
@@ -85,7 +84,7 @@ class SignInActivity : AppCompatActivity() {
             }else{
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this,MainActivity::class.java)
                         startActivity(intent)
                     }else{
                         Toast.makeText(this,getString(R.string.msg_singin_commonerror),Toast.LENGTH_SHORT).show()
@@ -100,6 +99,22 @@ class SignInActivity : AppCompatActivity() {
             btGoogle()
         }
 
+        //Para Github
+        btnGithub.setOnClickListener {
+            auth.startActivityForSignInWithProvider(this, provider.build())
+                .addOnSuccessListener {
+                    // El usuario ha iniciado sesión correctamente
+                    val user = auth.currentUser
+                    Toast.makeText(this, "Iniciaste sesión como ${user?.displayName}", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                .addOnFailureListener {
+                    // El inicio de sesión falló
+                    Toast.makeText(this, "Error al iniciar sesión: ${it.message}", Toast.LENGTH_SHORT).show()
+                }
+        }
 
 
 
@@ -111,18 +126,17 @@ class SignInActivity : AppCompatActivity() {
             .requestEmail()
             .build()
         val googleClient = GoogleSignIn.getClient(this,googleConf)
+
         googleClient.signOut().addOnCompleteListener {
+
             val signInIntent = googleClient.signInIntent
-            startActivityForResult(signInIntent,GOOGLE_SIGN_IN)
+            startActivityForResult(signInIntent, GOOGLE_SIGN_IN)
         }
 
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-
-        callbackManager.onActivityResult(requestCode,resultCode,data)
-
         if (requestCode == GOOGLE_SIGN_IN){
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
@@ -137,6 +151,7 @@ class SignInActivity : AppCompatActivity() {
                 Log.w("Tag","Google failed $e")
             }
         }
+
     }
 
     private fun firebaseAuthWithGoogle(idToken: String){
@@ -155,16 +170,11 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun login(email : String){
-        val intent = Intent(this,InvoiceRegister::class.java).apply {
+        val intent = Intent(this,MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         }
         startActivity(intent)
     }
-
-
-
-
-
 
 
 }
