@@ -13,7 +13,14 @@
     <string name="label_sign_in">Don\'t have an account yet?</string>
     <string name="label_buttonSignUp_sign_in">SIGN UP</string>
     <string name="button_google_sign_in">GOOGLE</string>
-    <string name="button_facebook_sign_in">FACEBOOK</string>"
+    <string name="button_facebook_sign_in">FACEBOOK</string>
+    <string name="msg_singin_enteremail">Enter an E-mail!</string>
+    <string name="msg_singin_enterpassword">Enter a Password!</string>
+    <string name="msg_singin_enterdatacorrectly">Enter the characters correctly, please!</string>
+    <string name="msg_singin_enteremail_valid">Enter a valid E-mail, please!</string>
+    <string name="msg_singin_enterpassword_valid">Enter a password with at least 6 characters!</string>
+    <string name="msg_singin_commonerror">Something went wrong, try it again!</string>
+    <string name="msg_singin_email_notexist">The selected Email doesn´t exist!</string>
     <!--activity_sign_up-->
     <string name="welcome_sign_up">Join our app today</string>
     <string name="title_sign_up">Sign Up</string>
@@ -24,6 +31,9 @@
     <string name="accept_sign_up">SIGN UP</string>
     <string name="label_sign_up">Already have an account?</string>
     <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
+    <string name="msg_singup_enterusername">Add a Username!</string>
+    <string name="msg_singup_enterpassword_again">Enter password again, please!</string>
+    <string name="msg_singup_enterpassword_notmatch">Your passwords don´t match! :(</string>
     <!--activity-main-->
     <string name="label_main_title">FACT-APP</string>
     <string name="label_main_account_title">AMOUNT REGISTERED IN YOUR ACCOUNT</string>
@@ -37,6 +47,8 @@
     <string name="label_main_opc4">ADD\nRECEIPT</string>
     <string name="label_main_opc5">MAKE A\nTRANSFER</string>
     <string name="label_main_opc6">EXTRA OPC</string>
+    <!--activity invoice-->
+    <string name="label_whatdoyouneed">What do you want to do?</string>
     <!--activtiy add invoice-->
     <string name="label_addinvoice_title">ADD INVOICE/RECEIPT</string>
     <string name="label_addinvoice_btnUploadImg">UPLOAD IMAGE</string>
@@ -65,7 +77,11 @@
     <string name="label_adapter_fact_client">Client:</string>
     <string name="label_adapter_fact_descrip">Description:</string>
     <string name="label_adapter_fact_total">Value:</string>
-
+    <!--EXTRAS-->
+    <string name="label_button1">Delete</string>
+    <string name="label_button2">Cancel</string>
+    <string name="label_record_deleted">Record Deleted!</string>
+    <string name="label_record_deleted_canel">Operation Canceled!</string>
 
 
 

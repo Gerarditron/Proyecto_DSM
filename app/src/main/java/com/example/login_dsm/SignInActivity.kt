@@ -63,32 +63,31 @@ class SignInActivity : AppCompatActivity() {
 
             if (email.isEmpty() || password.isEmpty()){
                 if (email.isEmpty()){
-                    signInEmail.error = "Ingrese su correo electronico"
+                    signInEmail.error = getString(R.string.msg_singin_enteremail)
                 }
                 if (password.isEmpty()){
-                    signInPassword.error = "Ingrese su contraseña"
+                    signInPassword.error = getString(R.string.msg_singin_enterpassword)
                     signInPasswordLayout.isPasswordVisibilityToggleEnabled = false
                 }
-
                 signInProgressBar.visibility = View.GONE
-                Toast.makeText(this,"Ingrese datos validos",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.msg_singin_enterdatacorrectly),Toast.LENGTH_SHORT).show()
 
             }else if (!email.matches(emailPattern.toRegex())){
                 signInProgressBar.visibility = View.GONE
-                signInEmail.error = "Ingrese un correo electronico valido"
-                Toast.makeText(this,"Ingrese un correo electronico valido",Toast.LENGTH_SHORT).show()
+                signInEmail.error = getString(R.string.msg_singin_enteremail_valid)
+                Toast.makeText(this,getString(R.string.msg_singin_enteremail_valid),Toast.LENGTH_SHORT).show()
             }else if (password.length < 6 ){
                 signInPasswordLayout.isPasswordVisibilityToggleEnabled = false
                 signInProgressBar.visibility = View.GONE
-                signInPassword.error = "Ingrese una contraseña con mas de 6 caracteres"
-                Toast.makeText(this,"Ingrese una contraseña con mas de 6 caracteres",Toast.LENGTH_SHORT).show()
+                signInPassword.error = getString(R.string.msg_singin_enterpassword_valid)
+                Toast.makeText(this,R.string.msg_singin_enterpassword_valid,Toast.LENGTH_SHORT).show()
             }else{
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
                         val intent = Intent(this,MainActivity::class.java)
                         startActivity(intent)
                     }else{
-                        Toast.makeText(this,"Algo ocurrio mal, intentalo de nuevo",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this,getString(R.string.msg_singin_commonerror),Toast.LENGTH_SHORT).show()
                         signInProgressBar.visibility = View.GONE
                     }
                 }
@@ -146,7 +145,7 @@ class SignInActivity : AppCompatActivity() {
                     Log.d("Tag","googleId ${account.id}")
                     firebaseAuthWithGoogle(account.idToken!!)
                 }else{
-                    Toast.makeText(this,"El correo no existe",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,getString(R.string.msg_singin_email_notexist),Toast.LENGTH_SHORT).show()
                 }
             }catch (e:ApiException){
                 Log.w("Tag","Google failed $e")
@@ -165,7 +164,7 @@ class SignInActivity : AppCompatActivity() {
                     login(user)
                 }else{
                     Log.w("Tag","failed",task.exception)
-                    Toast.makeText(this,"No se pudo ingresar",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,getString(R.string.msg_singin_commonerror),Toast.LENGTH_SHORT).show()
                 }
             }
     }

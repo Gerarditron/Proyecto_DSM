@@ -3925,6 +3925,8 @@ string label_addinvoice_provFact
 string label_addinvoice_title
 string label_addinvoice_typeFact
 string label_addinvoice_valueFact
+string label_button1
+string label_button2
 string label_buttonSignUp_sign_in
 string label_main_account_title
 string label_main_email_title
@@ -3938,8 +3940,11 @@ string label_main_opc6
 string label_main_title
 string label_main_transf_title
 string label_main_user_title
+string label_record_deleted
+string label_record_deleted_canel
 string label_sign_in
 string label_sign_up
+string label_whatdoyouneed
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3975,6 +3980,16 @@ string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string menu_close_session
 string messenger_send_button_text
+string msg_singin_commonerror
+string msg_singin_email_notexist
+string msg_singin_enterdatacorrectly
+string msg_singin_enteremail
+string msg_singin_enteremail_valid
+string msg_singin_enterpassword
+string msg_singin_enterpassword_valid
+string msg_singup_enterpassword_again
+string msg_singup_enterpassword_notmatch
+string msg_singup_enterusername
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name

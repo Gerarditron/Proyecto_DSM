@@ -55,10 +55,10 @@ class InvoiceRegister : AppCompatActivity() {
                             HashMap<String, String>()
                         hashMap["link"] = java.lang.String.valueOf(uri)
                         myRef.setValue(hashMap)
-                        Log.d("Mensaje", "Se subió correctamente")
+                        //Log.d("Mensaje", "Se subió correctamente")
                         Toast.makeText(
                             this@InvoiceRegister,
-                            "La imagen se subió correctamente!", Toast.LENGTH_SHORT
+                            getString(R.string.toast_addinvoice_foto_upload), Toast.LENGTH_SHORT
                         ).show()
                     }
                 }
@@ -70,7 +70,7 @@ class InvoiceRegister : AppCompatActivity() {
         when(item.itemId){
             R.id.action_sign_out->{
                 FirebaseAuth.getInstance().signOut().also {
-                    Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.menu_close_session), Toast.LENGTH_SHORT).show()
 
                     val intent = Intent(this, SignInActivity::class.java)
                     startActivity(intent)
