@@ -13,6 +13,13 @@
     <string name="label_buttonSignUp_sign_in">REGISTRATE</string>
     <string name="button_google_sign_in">GOOGLE</string>
     <string name="button_facebook_sign_in">FACEBOOK</string>"
+    <string name="msg_singin_enteremail">¡Ingrese el correo electrónico!</string>
+    <string name="msg_singin_enterpassword">¡Ingrese una contraseña!</string>
+    <string name="msg_singin_enterdatacorrectly">¡Ingrese datos válidos!</string>
+    <string name="msg_singin_enteremail_valid">¡Ingrese un correo electronico válido!</string>
+    <string name="msg_singin_enterpassword_valid">¡Ingrese una contraseña con mas de 6 caracteres!</string>
+    <string name="msg_singin_commonerror">¡Algo salió mal, inténtelo de nuevo!</string>
+    <string name="msg_singin_email_notexist">¡El correo seleccionado no existe!</string>
     <!--activity_sign_up-->
     <string name="welcome_sign_up">Únete a nuestra aplicación</string>
     <string name="title_sign_up">Registra tu usuario</string>
@@ -23,6 +30,9 @@
     <string name="accept_sign_up">REGISTRAR</string>
     <string name="label_sign_up">¿Ya posees una cuenta?</string>
     <string name="buttonLabel_signIn_sign_up">INICIA SESIÓN</string>
+    <string name="msg_singup_enterusername">¡Ingrese el Nombre de Usuario!</string>
+    <string name="msg_singup_enterpassword_again">¡Ingrese su contraseña nuevamente!</string>
+    <string name="msg_singup_enterpassword_notmatch">¡Sus contraseñas no coinciden! :(</string>
     <!--activity-main-->
     <string name="label_main_title">FACT-APP</string>
     <string name="label_main_account_title">VALOR DE CUENTA DE REGISTROS</string>
@@ -36,6 +46,8 @@
     <string name="label_main_opc4">AGREGAR\nFACTURAS</string>
     <string name="label_main_opc5">HACER UNA\nTRANSACCIÓN</string>
     <string name="label_main_opc6">EXTRA OPC</string>
+    <!--activity invoice-->
+    <string name="label_whatdoyouneed">¿Que desea hacer?</string>
     <!--activtiy add invoice-->
     <string name="label_addinvoice_title">AGREGAR FACTURA</string>
     <string name="label_addinvoice_btnUploadImg">AGREGAR IMAGEN FACTURA</string>
@@ -64,7 +76,10 @@
     <string name="label_adapter_fact_client">Cliente: </string>
     <string name="label_adapter_fact_descrip">Descripción: </string>
     <string name="label_adapter_fact_total">Monto: </string>
-
-
+    <!--EXTRAS-->
+    <string name="label_button1">Eliminar</string>
+    <string name="label_button2">Cancelar</string>
+    <string name="label_record_deleted">¡Registro Eliminado!</string>
+    <string name="label_record_deleted_canel">¡Operación de borrado cancelada!</string>
 
 </resources>

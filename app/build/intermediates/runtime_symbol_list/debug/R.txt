@@ -3924,6 +3924,8 @@ int string label_addinvoice_provFact 0x7f120086
 int string label_addinvoice_title 0x7f120087
 int string label_addinvoice_typeFact 0x7f120088
 int string label_addinvoice_valueFact 0x7f120089
+int string label_button1 0x7f120122
+int string label_button2 0x7f12012f
 int string label_buttonSignUp_sign_in 0x7f12008a
 int string label_main_account_title 0x7f12008b
 int string label_main_email_title 0x7f12008c
@@ -3937,8 +3939,11 @@ int string label_main_opc6 0x7f120093
 int string label_main_title 0x7f120094
 int string label_main_transf_title 0x7f120095
 int string label_main_user_title 0x7f120096
+int string label_record_deleted 0x7f12012e
+int string label_record_deleted_canel 0x7f120130
 int string label_sign_in 0x7f120097
 int string label_sign_up 0x7f120098
+int string label_whatdoyouneed 0x7f120123
 int string m3_sys_motion_easing_emphasized 0x7f120099
 int string m3_sys_motion_easing_emphasized_accelerate 0x7f12009a
 int string m3_sys_motion_easing_emphasized_decelerate 0x7f12009b
@@ -3974,6 +3979,16 @@ int string material_timepicker_select_time 0x7f1200b8
 int string material_timepicker_text_input_mode_description 0x7f1200b9
 int string menu_close_session 0x7f120121
 int string messenger_send_button_text 0x7f1200ba
+int string msg_singin_commonerror 0x7f120124
+int string msg_singin_email_notexist 0x7f120125
+int string msg_singin_enterdatacorrectly 0x7f120126
+int string msg_singin_enteremail 0x7f120127
+int string msg_singin_enteremail_valid 0x7f120128
+int string msg_singin_enterpassword 0x7f120129
+int string msg_singin_enterpassword_valid 0x7f12012a
+int string msg_singup_enterpassword_again 0x7f12012b
+int string msg_singup_enterpassword_notmatch 0x7f12012c
+int string msg_singup_enterusername 0x7f12012d
 int string mtrl_badge_numberless_content_description 0x7f1200bb
 int string mtrl_checkbox_button_icon_path_checked 0x7f1200bc
 int string mtrl_checkbox_button_icon_path_group_name 0x7f1200bd

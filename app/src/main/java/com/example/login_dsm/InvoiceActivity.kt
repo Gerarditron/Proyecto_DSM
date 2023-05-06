@@ -59,23 +59,23 @@ class InvoiceActivity : AppCompatActivity() {
                 // Preparando cuadro de dialogo para preguntar al usuario
                 // Si esta seguro de eliminar o no el registro
                 val ad = AlertDialog.Builder(this@InvoiceActivity)
-                ad.setMessage("¿Que desea hacer?")
+                ad.setMessage(getString(R.string.label_whatdoyouneed))
                     .setTitle("Menu")
-                ad.setPositiveButton("Eliminar"
+                ad.setPositiveButton(getString(R.string.label_button1)
                 ) { dialog, id ->
                     invoices!![position].numero?.let {
                         InvoiceActivity.refInvoices.child(it).removeValue()
                     }
                     Toast.makeText(
                         this@InvoiceActivity,
-                        "Registro borrado!", Toast.LENGTH_SHORT
+                        getString(R.string.label_record_deleted), Toast.LENGTH_SHORT
                     ).show()
                 }
-                ad.setNegativeButton("Agregar al carrito", object : DialogInterface.OnClickListener {
+                ad.setNegativeButton(getString(R.string.label_button2), object : DialogInterface.OnClickListener {
                     override fun onClick(dialog: DialogInterface, id: Int) {
                         Toast.makeText(
                             this@InvoiceActivity,
-                            "Operación de borrado cancelada!", Toast.LENGTH_SHORT
+                            getString(R.string.label_record_deleted_canel), Toast.LENGTH_SHORT
                         ).show()
                     }
                 })
@@ -133,7 +133,7 @@ class InvoiceActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.action_sign_out->{
                 FirebaseAuth.getInstance().signOut().also {
-                    Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.menu_close_session), Toast.LENGTH_SHORT).show()
 
                     val intent = Intent(this, SignInActivity::class.java)
                     startActivity(intent)
