@@ -1343,6 +1343,7 @@ color celeste
 color colorAccent
 color colorDarkBlue
 color colorGreen
+color colorHintText
 color colorPrimary
 color colorPrimaryDark
 color colorPurple
@@ -2840,6 +2841,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable git32
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -2956,7 +2958,7 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id SignInBtn
-id SignInFacebookBtn
+id SignInGithubBtn
 id SignInGoogleBtn
 id SignInText
 id SignUpBtn
@@ -3061,6 +3063,8 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAddFact
 id btnCancel
+id btnSearchEmailCancel
+id btnSearchEmailTransfer
 id btnSubirFoto
 id button
 id buttonPanel
@@ -3154,6 +3158,7 @@ id edtCliente
 id edtConcepto
 id edtFecha
 id edtNumero
+id edtNumeroBox
 id edtTipo
 id edtTotal
 id edtfoto
@@ -3225,7 +3230,6 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
-id label_addinvoice_numFact
 id labeled
 id large
 id layout
@@ -3247,6 +3251,7 @@ id lbInvoiceTotal
 id lbMakeTransf
 id lbMovements
 id lbRegisterMov
+id lbSearchCorreoTitle
 id lbTitleMain
 id lbTransfers
 id left
@@ -3542,6 +3547,8 @@ id tvFecha
 id tvNumero
 id tvTipo
 id tvTotal
+id txtCorreoSearch
+id txtCorreoSearchBox
 id txtDateFact
 id txtDescFact
 id txtLinkImgFact
@@ -3684,6 +3691,7 @@ layout activity_add_invoice
 layout activity_invoice
 layout activity_invoice_register
 layout activity_main
+layout activity_searchemail
 layout activity_sign_in
 layout activity_sign_up
 layout browser_actions_context_menu_page
@@ -3841,6 +3849,8 @@ string bottomsheet_drag_handle_content_description
 string buttonLabel_signIn_sign_up
 string button_facebook_sign_in
 string button_google_sign_in
+string button_searchEmail
+string button_searchEmail_cancel
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3928,6 +3938,7 @@ string label_addinvoice_valueFact
 string label_button1
 string label_button2
 string label_buttonSignUp_sign_in
+string label_hint_searchEmail
 string label_main_account_title
 string label_main_email_title
 string label_main_mov_title
@@ -3942,6 +3953,8 @@ string label_main_transf_title
 string label_main_user_title
 string label_record_deleted
 string label_record_deleted_canel
+string label_searchEmail_subtitle
+string label_searchEmail_title
 string label_sign_in
 string label_sign_up
 string label_whatdoyouneed
@@ -4079,6 +4092,12 @@ string toast_addinvoice_sessionClosed
 string toast_addinvoice_updateSuccessful
 string toast_addinvoice_uploadFailed
 string toast_addinvoice_uploadSuccess
+string toast_main_userAdded
+string toast_searchEmail_emailempty
+string toast_searchEmail_emailfound
+string toast_searchEmail_emailloggedin
+string toast_searchEmail_emailnotfound
+string toast_searchEmail_emailnotvalid
 string welcome_sign_in
 string welcome_sign_up
 style AlertDialog_AppCompat

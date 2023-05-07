@@ -58,7 +58,7 @@
         android:orientation="horizontal">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/label_addinvoice_numFact"
+            android:id="@+id/edtNumeroBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"

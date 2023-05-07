@@ -5,6 +5,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -43,6 +44,7 @@ class InvoiceActivity : AppCompatActivity() {
                 intent.putExtra("concepto", invoices!![i].concepto)
                 intent.putExtra("total", invoices!![i].total)
                 intent.putExtra("foto", invoices!![i].foto)
+                intent.putExtra("tipoMov",invoices!![i].tipoMov)
                 startActivity(intent)
             }
         })
@@ -100,7 +102,7 @@ class InvoiceActivity : AppCompatActivity() {
         })
         invoices = ArrayList<Invoice>()
 
-        // Cambiarlo refProductos a consultaOrdenada para ordenar lista
+        // Cambiarlo a consultaOrdenada para ordenar lista
         consultaOrdenada.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 // Procedimiento que se ejecuta cuando hubo algun cambio
@@ -110,7 +112,14 @@ class InvoiceActivity : AppCompatActivity() {
                 for (dato in dataSnapshot.getChildren()) {
                     val invoice: Invoice? = dato.getValue(Invoice::class.java)
                     invoice?.key(dato.key)
-                    if (invoice != null) {
+
+                    //Filtrando la informacion de la lista solo para el usuario Logrado
+                    var auth = FirebaseAuth.getInstance()
+                    var userIDLogged : String = auth.currentUser?.uid.toString()
+                    val userIDFact : String = invoice?.userID.toString()
+
+
+                    if (invoice != null && userIDLogged == userIDFact ) {
                         invoices!!.add(invoice)
                     }
                 }

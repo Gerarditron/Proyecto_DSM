@@ -46,6 +46,9 @@
             android:name="com.example.login_dsm.SignInActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.login_dsm.transfer.SearchemailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.login_dsm.MainActivity"
             android:exported="true" >
             <intent-filter>
