@@ -59,18 +59,12 @@ class SignUpActivity : AppCompatActivity() {
             if(name.isEmpty() || email.isEmpty() || password.isEmpty() || cPassword.isEmpty()){
                 if(name.isEmpty()){
                     signUpName.error = getString(R.string.msg_singup_enterusername)
-                }
-
-                if(email.isEmpty()){
+                } else if(email.isEmpty()){
                     signUpEmail.error = getString(R.string.msg_singin_enteremail)
-                }
-
-                if(password.isEmpty()){
+                } else if(password.isEmpty()){
                     signUpPasswordLayout.isPasswordVisibilityToggleEnabled = false
                     signUpPassword.error = getString(R.string.msg_singin_enterpassword)
-                }
-
-                if(cPassword.isEmpty()){
+                } else if(cPassword.isEmpty()){
                     signUpCPasswordLayout.isPasswordVisibilityToggleEnabled = false
                     signUpCPassword.error = getString(R.string.msg_singup_enterpassword_again)
                 }
@@ -91,9 +85,11 @@ class SignUpActivity : AppCompatActivity() {
                 signUpCPassword.error = getString(R.string.msg_singup_enterpassword_notmatch)
             }else{
                 auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
+
                     if (it.isSuccessful){
+                        //Agregando la referencia a los obejetos "usuarios" dentro de la base
                         val databaseRef = database.reference.child("users").child(auth.currentUser!!.uid)
-                        //Agregando el usuario con
+                        //Agregando el usuario para el Realtime Database
                         val users : Users = Users(name, email, auth.currentUser!!.uid)
 
                         databaseRef.setValue(users).addOnCompleteListener {

@@ -29,6 +29,9 @@ import java.util.HashMap
 import android.widget.*
 import android.content.Context
 import android.provider.MediaStore.Audio.Radio
+import android.text.InputType
+import com.google.android.material.textfield.TextInputLayout
+import java.security.KeyStore.TrustedCertificateEntry
 
 class AddInvoiceActivity : AppCompatActivity() {
     private var edtNumero: EditText? = null
@@ -114,14 +117,6 @@ class AddInvoiceActivity : AppCompatActivity() {
         }
     }
     private fun inicializar() {
-        edtNumero = findViewById<EditText>(R.id.edtNumero)
-        edtTipo = findViewById<EditText>(R.id.edtTipo)
-        edtFecha = findViewById<EditText>(R.id.edtFecha)
-        edtCliente = findViewById<EditText>(R.id.edtCliente)
-        edtConcepto = findViewById<EditText>(R.id.edtConcepto)
-        edtTotal = findViewById<EditText>(R.id.edtTotal)
-        edtfoto = findViewById<EditText>(R.id.edtfoto)
-
         val edtNumero = findViewById<EditText>(R.id.edtNumero)
         val edtTipo = findViewById<EditText>(R.id.edtTipo)
         val edtFecha = findViewById<EditText>(R.id.edtFecha)
@@ -129,34 +124,33 @@ class AddInvoiceActivity : AppCompatActivity() {
         val edtConcepto = findViewById<EditText>(R.id.edtConcepto)
         val edtTotal = findViewById<EditText>(R.id.edtTotal)
         val edtfoto = findViewById<EditText>(R.id.edtfoto)
+        val rdPost = findViewById<RadioButton>(R.id.rdPost)
+        val rdPayment = findViewById<RadioButton>(R.id.rdPayment)
+        val tipoMov : String
 
         // Obtención de datos que envia actividad anterior
         val datos: Bundle? = intent.getExtras()
         if (datos != null) {
             key = datos.getString("key").toString()
-        }
-        if (datos != null) {
             edtNumero.setText(intent.getStringExtra("numero").toString())
-        }
-        if (datos != null) {
+            //Como estamos cargando los datos desde el listado no podemos permitirle al usuario cambiar la ID de la factura
+            edtNumero.inputType = InputType.TYPE_NULL
+            edtNumero.setTextColor(this.getColor(R.color.colorPrimaryDark))
             edtTipo.setText(intent.getStringExtra("tipo").toString())
-        }
-        if (datos != null) {
             edtFecha.setText(intent.getStringExtra("fecha").toString())
-        }
-        if (datos != null) {
             edtCliente.setText(intent.getStringExtra("cliente").toString())
-        }
-        if (datos != null) {
             edtConcepto.setText(intent.getStringExtra("concepto").toString())
-        }
-        if (datos != null) {
             edtTotal.setText(intent.getStringExtra("total").toString())
-        }
-        if (datos != null) {
             edtfoto.setText(intent.getStringExtra("foto").toString())
-        }
-        if (datos != null) {
+            tipoMov = intent.getStringExtra("tipoMov").toString()
+            if(tipoMov == "POST"){
+                rdPost.isEnabled = true
+                rdPayment.isEnabled = false
+            } else {
+                rdPost.isEnabled = false
+                rdPayment.isEnabled = true
+            }
+            Log.d("EDIT",tipoMov)
             accion = datos.getString("accion").toString()
         }
 
@@ -165,6 +159,7 @@ class AddInvoiceActivity : AppCompatActivity() {
 
     fun guardar(v: View?) {
         val numero: String = edtNumero?.text.toString()
+        Log.d("ADD",numero.toString())
         val tipo: String = edtTipo?.text.toString()
         val fecha: String = edtFecha?.text.toString()
         val cliente: String = edtCliente?.text.toString()
