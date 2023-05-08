@@ -8,6 +8,10 @@
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\layout_activity_transfer.xml.flat",
+        "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\layout\\activity_transfer.xml"
+    },
+    {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\drawable_git32.png.flat",
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\drawable\\git32.png"
     },
@@ -76,10 +80,6 @@
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.login_dsm.app-merged_res-40:/layout_activity_searchemail.xml.flat",
-        "source": "com.example.login_dsm.app-main-42:/layout/activity_searchemail.xml"
-    },
-    {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\drawable_img1.png.flat",
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\drawable\\img1.png"
     },
@@ -118,6 +118,10 @@
     {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\mipmap-hdpi_facebook.png.flat",
         "source": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-main-42:\\mipmap-hdpi\\facebook.png"
+    },
+    {
+        "merged": "com.example.login_dsm.app-merged_res-40:/layout_activity_transfer.xml.flat",
+        "source": "com.example.login_dsm.app-main-42:/layout/activity_transfer.xml"
     },
     {
         "merged": "C:\\Users\\gerar\\.gradle\\daemon\\8.0\\com.example.login_dsm.app-merged_res-40:\\layout_activity_sign_in.xml.flat",

@@ -3,7 +3,9 @@ local
 color black
 color celeste
 color colorAccent
+color colorBox_unavailable
 color colorDarkBlue
+color colorDarkBlue_unavailable
 color colorGreen
 color colorHintText
 color colorPrimary
@@ -34,10 +36,14 @@ id SignUpProgress
 id SignUpText
 id action_sign_out
 id btnAddFact
+id btnAddTransf
 id btnCancel
+id btnCancelTransf
+id btnOpenTransfImg
 id btnSearchEmailCancel
 id btnSearchEmailTransfer
 id btnSubirFoto
+id btnUploadTransfImg
 id edtCliente
 id edtConcepto
 id edtFecha
@@ -60,6 +66,7 @@ id lbAddInvTitle
 id lbAddReceipt
 id lbClasifMov
 id lbEmailLoggedIn
+id lbEmailReceiver
 id lbEmailTitle
 id lbEstadistMov
 id lbExtra
@@ -71,6 +78,8 @@ id lbInvoiceSupplier
 id lbInvoiceTotal
 id lbMakeTransf
 id lbMovements
+id lbNameReceiver
+id lbNameReceiverTitle
 id lbRegisterMov
 id lbSearchCorreoTitle
 id lbTitleMain
@@ -95,8 +104,10 @@ id lytAccount
 id lytAccountEmail
 id lytAccountNameBox
 id lytButtons
+id lytImageButtonsContainer
 id lytMenu
 id lytMovOpc
+id lytNameReceiver
 id lytNumberDate
 id lytTitle
 id lytTransfOpc
@@ -134,6 +145,7 @@ layout activity_main
 layout activity_searchemail
 layout activity_sign_in
 layout activity_sign_up
+layout activity_transfer
 layout invoice_layout
 menu menu
 mipmap facebook
@@ -204,6 +216,13 @@ string label_searchEmail_subtitle
 string label_searchEmail_title
 string label_sign_in
 string label_sign_up
+string label_transfer_addTransx
+string label_transfer_button_openimage
+string label_transfer_button_uploadimage
+string label_transfer_card_title
+string label_transfer_card_user
+string label_transfer_descrip
+string label_trasnfer_title
 string label_whatdoyouneed
 string menu_close_session
 string msg_singin_commonerror
@@ -223,6 +242,7 @@ string project_id
 string spinner_addinvoice_payment
 string spinner_addinvoice_post
 string spinner_hint_paymentPost
+string tipo_transfer_value
 string title_sign_in
 string title_sign_up
 string toast_addinvoice_foto_upload

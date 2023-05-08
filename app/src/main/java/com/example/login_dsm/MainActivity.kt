@@ -25,6 +25,9 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.getValue
 import org.w3c.dom.Text
+import java.lang.Math.round
+import java.text.DecimalFormat
+import kotlin.math.roundToLong
 
 class MainActivity : AppCompatActivity() {
 
@@ -70,9 +73,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
-
         //Consulta a la base - solo los con el userID que ingreso a la aplicacion
         var consultaValue: com.google.firebase.database.Query =  refFact.orderByChild("userID").equalTo(userIDLogged)
 
@@ -88,19 +88,22 @@ class MainActivity : AppCompatActivity() {
 
                     //Evaluando si es una abono/cargo
                     if (data?.tipoMov.toString() == "PAY"){
-                        actualMoney += data?.total?.toDouble() ?: 0.0
+                        actualMoney += data?.total?.toDouble() ?: 0.00
                     } else if (data?.tipoMov.toString() == "POST"){
-                        actualMoney -= data?.total?.toDouble() ?: 0.0
+                        actualMoney -= data?.total?.toDouble() ?: 0.00
                     }
 
-                    Log.d("MAIN",data?.total.toString())
+                    Log.d("MAIN",data?.total.toString() + " -tipoMov: "+ data?.tipoMov.toString())
                 }
 
-                //Actualizando el valor del string
-                lbAccountValue.text = "$ " + actualMoney.toString()
+                //Redondeando a 2 decimales
+                val decimalFormat = DecimalFormat("#.##")
+                val actualMoneyR = decimalFormat.format(actualMoney)
+
+                lbAccountValue.text = "$ $actualMoneyR"
                 if (actualMoney > 0){
                     lbAccountValue.setTextColor(getColor(R.color.colorGreen))
-                } else if (actualMoney == 0.0){
+                } else if (actualMoney == 0.00){
                     lbAccountValue.text = "$ 0.00"
                     lbAccountValue.setTextColor(getColor(R.color.black))
                 } else if (actualMoney < 0)  {

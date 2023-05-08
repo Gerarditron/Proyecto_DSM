@@ -1340,7 +1340,9 @@ int color cardview_shadow_end_color 0x7f050030
 int color cardview_shadow_start_color 0x7f050031
 int color celeste 0x7f050032
 int color colorAccent 0x7f050033
+int color colorBox_unavailable 0x7f0502b1
 int color colorDarkBlue 0x7f050034
+int color colorDarkBlue_unavailable 0x7f0502b0
 int color colorGreen 0x7f050035
 int color colorHintText 0x7f0502af
 int color colorPrimary 0x7f050036
@@ -3061,10 +3063,14 @@ int id browser_actions_menu_item_text 0x7f080072
 int id browser_actions_menu_items 0x7f080073
 int id browser_actions_menu_view 0x7f080074
 int id btnAddFact 0x7f080075
+int id btnAddTransf 0x7f080283
 int id btnCancel 0x7f080076
+int id btnCancelTransf 0x7f080284
+int id btnOpenTransfImg 0x7f080285
 int id btnSearchEmailCancel 0x7f08027b
 int id btnSearchEmailTransfer 0x7f080277
 int id btnSubirFoto 0x7f080077
+int id btnUploadTransfImg 0x7f080286
 int id button 0x7f080078
 int id buttonPanel 0x7f080079
 int id cache_measures 0x7f08007a
@@ -3238,6 +3244,7 @@ int id lbAddInvTitle 0x7f080121
 int id lbAddReceipt 0x7f080122
 int id lbClasifMov 0x7f080123
 int id lbEmailLoggedIn 0x7f080124
+int id lbEmailReceiver 0x7f08027e
 int id lbEmailTitle 0x7f080125
 int id lbEstadistMov 0x7f080126
 int id lbExtra 0x7f080127
@@ -3249,6 +3256,8 @@ int id lbInvoiceSupplier 0x7f08012c
 int id lbInvoiceTotal 0x7f08012d
 int id lbMakeTransf 0x7f08012e
 int id lbMovements 0x7f08012f
+int id lbNameReceiver 0x7f08027f
+int id lbNameReceiverTitle 0x7f080280
 int id lbRegisterMov 0x7f080130
 int id lbSearchCorreoTitle 0x7f080278
 int id lbTitleMain 0x7f080131
@@ -3282,8 +3291,10 @@ int id lytAccount 0x7f08014c
 int id lytAccountEmail 0x7f08014d
 int id lytAccountNameBox 0x7f08014e
 int id lytButtons 0x7f08014f
+int id lytImageButtonsContainer 0x7f080281
 int id lytMenu 0x7f080150
 int id lytMovOpc 0x7f080151
+int id lytNameReceiver 0x7f080282
 int id lytNumberDate 0x7f080152
 int id lytTitle 0x7f080153
 int id lytTransfOpc 0x7f080154
@@ -3693,6 +3704,7 @@ int layout activity_main 0x7f0b001f
 int layout activity_searchemail 0x7f0b0086
 int layout activity_sign_in 0x7f0b0020
 int layout activity_sign_up 0x7f0b0021
+int layout activity_transfer 0x7f0b0087
 int layout browser_actions_context_menu_page 0x7f0b0022
 int layout browser_actions_context_menu_row 0x7f0b0023
 int layout com_facebook_activity_layout 0x7f0b0024
@@ -3956,6 +3968,13 @@ int string label_searchEmail_subtitle 0x7f11011d
 int string label_searchEmail_title 0x7f11011e
 int string label_sign_in 0x7f11008f
 int string label_sign_up 0x7f110090
+int string label_transfer_addTransx 0x7f110125
+int string label_transfer_button_openimage 0x7f110126
+int string label_transfer_button_uploadimage 0x7f110127
+int string label_transfer_card_title 0x7f110128
+int string label_transfer_card_user 0x7f110129
+int string label_transfer_descrip 0x7f11012a
+int string label_trasnfer_title 0x7f11012b
 int string label_whatdoyouneed 0x7f110091
 int string m3_sys_motion_easing_emphasized 0x7f110092
 int string m3_sys_motion_easing_emphasized_accelerate 0x7f110093
@@ -4083,6 +4102,7 @@ int string spinner_addinvoice_payment 0x7f11010c
 int string spinner_addinvoice_post 0x7f11010d
 int string spinner_hint_paymentPost 0x7f11010e
 int string status_bar_notification_info_overflow 0x7f11010f
+int string tipo_transfer_value 0x7f11012c
 int string title_sign_in 0x7f110110
 int string title_sign_up 0x7f110111
 int string toast_addinvoice_foto_upload 0x7f110112

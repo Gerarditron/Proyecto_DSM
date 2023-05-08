@@ -18,6 +18,9 @@
         android:theme="@style/Theme.LoginDSM"
         tools:targetApi="31">
         <activity
+            android:name=".TransferActivity"
+            android:exported="false" />
+        <activity
             android:name=".InvoiceRegister"
             android:exported="false" />
         <activity
@@ -48,8 +51,6 @@
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-
-
     </application>
 
 </manifest>

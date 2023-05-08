@@ -31,6 +31,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.LoginDSM" >
         <activity
+            android:name="com.example.login_dsm.TransferActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.login_dsm.InvoiceRegister"
             android:exported="false" />
         <activity

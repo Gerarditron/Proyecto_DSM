@@ -88,6 +88,15 @@
     <string name="toast_searchEmail_emailloggedin">No puedes hacerle una transferencia a la misma cuenta de correo con la que estas ingresado en la aplicación :(</string>
     <string name="toast_searchEmail_emailnotfound">El correo que busca no existe en la aplicación :(</string>
     <string name="toast_searchEmail_emailfound">¡Correo encontrado con éxito!</string>
+    <!--activity trasnfer-->
+    <string name="label_trasnfer_title">TRANSFERENCIA</string>
+    <string name="label_transfer_card_title">Está a punto de hacerle una transferencia al siguiente usuario:</string>
+    <string name="label_transfer_card_user">USUARIO: </string>
+    <string name="label_transfer_button_uploadimage">AGREGAR IMAGEN TRANSACCIÓN</string>
+    <string name="label_transfer_button_openimage">ABRIR IMAGEN TRANSACCIÓN</string>
+    <string name="label_transfer_descrip">Descripción de la transferencia</string>
+    <string name="label_transfer_addTransx">TRANSFERIR</string>
+    <string name="tipo_transfer_value">TRANSFERENCIA</string>
 
     <!--EXTRAS-->
     <string name="label_button1">Eliminar</string>

@@ -89,6 +89,15 @@
     <string name="toast_searchEmail_emailloggedin">You can\'t make a transfer to the same email account you\'re logged in with :(</string>
     <string name="toast_searchEmail_emailnotfound">The Email yo are searching for doesn\'t exists in the app :(</string>
     <string name="toast_searchEmail_emailfound">Email found successfully!</string>
+    <!--activity trasnfer-->
+    <string name="label_trasnfer_title">TRANSFER</string>
+    <string name="label_transfer_card_title">Your about to make a transfer to this user:</string>
+    <string name="label_transfer_card_user">USER: </string>
+    <string name="label_transfer_button_uploadimage">UPLOAD TRANSFER IMAGE</string>
+    <string name="label_transfer_button_openimage">OPEN TRANSFER IMAGE</string>
+    <string name="label_transfer_descrip">Concept of the transaction</string>
+    <string name="label_transfer_addTransx">TRANSFER</string>
+    <string name="tipo_transfer_value">TRANSFER</string>
     <!--EXTRAS-->
     <string name="label_button1">Delete</string>
     <string name="label_button2">Cancel</string>

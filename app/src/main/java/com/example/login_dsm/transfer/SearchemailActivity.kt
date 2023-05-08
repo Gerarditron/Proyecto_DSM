@@ -11,8 +11,10 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.login_dsm.InvoiceActivity
 import com.example.login_dsm.MainActivity
 import com.example.login_dsm.R
+import com.example.login_dsm.TransferActivity
 import com.example.login_dsm.databinding.ActivityAddInvoiceBinding
 import com.example.login_dsm.datos.Invoice
 import com.example.login_dsm.datos.Users
@@ -78,8 +80,12 @@ class SearchemailActivity: AppCompatActivity() {
                     val data: Users? = user.getValue(Users::class.java)
                     Toast.makeText(contextMain,getString(R.string.toast_searchEmail_emailfound),Toast.LENGTH_SHORT).show()
 
-                    Log.d("SEARCH",data?.uid.toString())
-                    Log.d("SEARCH",data?.email.toString())
+                    //Mandando a la otra actividad el UID y el Email de la persona a la que le vamos a transferir
+                    val intent = Intent(getBaseContext(), TransferActivity::class.java)
+                    intent.putExtra("uidReceiver",data?.uid.toString())
+                    intent.putExtra("emailReceiver",data?.email.toString())
+                    intent.putExtra("nameReceiver",data?.name.toString())
+                    startActivity(intent)
 
                 }
             }

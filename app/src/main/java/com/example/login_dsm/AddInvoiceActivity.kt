@@ -29,18 +29,25 @@ import java.util.HashMap
 import android.widget.*
 import android.content.Context
 import android.provider.MediaStore.Audio.Radio
+import android.renderscript.ScriptGroup.Input
 import android.text.InputType
+import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputLayout
 import java.security.KeyStore.TrustedCertificateEntry
+import java.util.Random
 
 class AddInvoiceActivity : AppCompatActivity() {
-    private var edtNumero: EditText? = null
-    private var edtTipo: EditText? = null
-    private var edtFecha: EditText? = null
-    private var edtCliente: EditText? = null
-    private var edtConcepto: EditText? = null
-    private var edtTotal: EditText? = null
-    private var edtfoto: EditText? = null
+    private lateinit var edtNumero: EditText
+    private lateinit var edtTipo: EditText
+    private lateinit var edtFecha: EditText
+    private lateinit var edtCliente: EditText
+    private lateinit var edtConcepto: EditText
+    private lateinit var edtTotal: EditText
+    private lateinit var edtfoto: EditText
+    private lateinit var txtTipFact: TextInputLayout
+    private lateinit var rdGroup: RadioGroup
+    private lateinit var rdPay: RadioButton
+    private lateinit var rdPost: RadioButton
     private var key = ""
     private var numero = ""
     private var tipo = ""
@@ -55,9 +62,7 @@ class AddInvoiceActivity : AppCompatActivity() {
     private val database1 = Firebase.database
     val myRef = database1.getReference("invoicesPictures")
     private lateinit var binding: ActivityAddInvoiceBinding
-    private lateinit var rdGroup: RadioGroup
-    private lateinit var rdPay: RadioButton
-    private lateinit var rdPost: RadioButton
+
     private  var tipoMovSel: String = "POST"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,10 +70,10 @@ class AddInvoiceActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add_invoice)
 
         //Declarando el rdGroup y los rdButtons
-        rdGroup = findViewById<RadioGroup>(R.id.rdgpPayPost)
+        rdGroup = findViewById(R.id.rdgpPayPost)
         //Creando los rdButtons
-        rdPay = findViewById<RadioButton>(R.id.rdPayment)
-        rdPost = findViewById<RadioButton>(R.id.rdPost)
+        rdPay = findViewById(R.id.rdPayment)
+        rdPost = findViewById(R.id.rdPost)
 
         binding = ActivityAddInvoiceBinding.inflate(layoutInflater)
         val view = binding.root
@@ -117,25 +122,23 @@ class AddInvoiceActivity : AppCompatActivity() {
         }
     }
     private fun inicializar() {
-        val edtNumero = findViewById<EditText>(R.id.edtNumero)
-        val edtTipo = findViewById<EditText>(R.id.edtTipo)
-        val edtFecha = findViewById<EditText>(R.id.edtFecha)
-        val edtCliente = findViewById<EditText>(R.id.edtCliente)
-        val edtConcepto = findViewById<EditText>(R.id.edtConcepto)
-        val edtTotal = findViewById<EditText>(R.id.edtTotal)
-        val edtfoto = findViewById<EditText>(R.id.edtfoto)
-        val rdPost = findViewById<RadioButton>(R.id.rdPost)
-        val rdPayment = findViewById<RadioButton>(R.id.rdPayment)
-        val tipoMov : String
+        edtNumero = findViewById(R.id.edtNumero)
+        txtTipFact = findViewById(R.id.txtTipFact)
+        edtTipo = findViewById(R.id.edtTipo)
+        edtFecha = findViewById(R.id.edtFecha)
+        edtCliente = findViewById(R.id.edtCliente)
+        edtConcepto = findViewById(R.id.edtConcepto)
+        edtTotal = findViewById(R.id.edtTotal)
+        edtfoto = findViewById(R.id.edtfoto)
+        rdPost = findViewById(R.id.rdPost)
+        rdPay = findViewById<RadioButton>(R.id.rdPayment)
+        var tipoMov : String
 
         // Obtención de datos que envia actividad anterior
         val datos: Bundle? = intent.getExtras()
         if (datos != null) {
             key = datos.getString("key").toString()
             edtNumero.setText(intent.getStringExtra("numero").toString())
-            //Como estamos cargando los datos desde el listado no podemos permitirle al usuario cambiar la ID de la factura
-            edtNumero.inputType = InputType.TYPE_NULL
-            edtNumero.setTextColor(this.getColor(R.color.colorPrimaryDark))
             edtTipo.setText(intent.getStringExtra("tipo").toString())
             edtFecha.setText(intent.getStringExtra("fecha").toString())
             edtCliente.setText(intent.getStringExtra("cliente").toString())
@@ -143,14 +146,35 @@ class AddInvoiceActivity : AppCompatActivity() {
             edtTotal.setText(intent.getStringExtra("total").toString())
             edtfoto.setText(intent.getStringExtra("foto").toString())
             tipoMov = intent.getStringExtra("tipoMov").toString()
-            if(tipoMov == "POST"){
-                rdPost.isEnabled = true
-                rdPayment.isEnabled = false
-            } else {
+            //Si es una transferencia no sera capaz de cambiar el proveedor y tampoco el tipo de movimiento, porque fue hecho con otro usuario
+            if (intent.getStringExtra("tipo").toString() == getString(R.string.tipo_transfer_value)){
+                edtTipo.isEnabled = false
+                edtTipo.inputType = InputType.TYPE_NULL
+                edtTipo.setTextColor(getColor(R.color.black))
+                txtTipFact.isEnabled = false
+                txtTipFact.boxBackgroundColor = ContextCompat.getColor(this, R.color.colorBox_unavailable)
+                if(tipoMov == "POST"){
+                    rdPost.isChecked = true
+                } else {
+                    rdPay.isChecked = true
+                }
                 rdPost.isEnabled = false
-                rdPayment.isEnabled = true
+                rdPay.isEnabled = false
+                rdPay.setTextColor(getColor(R.color.colorDarkBlue_unavailable))
+                rdPost.setTextColor(getColor(R.color.colorDarkBlue_unavailable))
             }
-            Log.d("EDIT",tipoMov)
+
+            //Por defecto si debe seleccionar el tipo de movimiento que se hizo
+            if(tipoMov == "POST"){
+                rdPost.isChecked = true
+                rdPay.isChecked = false
+            } else {
+                rdPost.isChecked = false
+                rdPay.isChecked = true
+            }
+
+
+            //Log.d("EDIT",tipoMov)
             accion = datos.getString("accion").toString()
         }
 
@@ -159,7 +183,6 @@ class AddInvoiceActivity : AppCompatActivity() {
 
     fun guardar(v: View?) {
         val numero: String = edtNumero?.text.toString()
-        Log.d("ADD",numero.toString())
         val tipo: String = edtTipo?.text.toString()
         val fecha: String = edtFecha?.text.toString()
         val cliente: String = edtCliente?.text.toString()
@@ -168,21 +191,27 @@ class AddInvoiceActivity : AppCompatActivity() {
         val foto: String = edtfoto?.text.toString()
         val tipoMov: String? = tipoMovSel
         val userID: String = FirebaseAuth.getInstance().currentUser?.uid.toString()
+        //Generando un codigo unico para cada factura
+        val invoiceID : String = generateUniqueCode(10)
+        //Si en algun momento da error por repetirse un ID crear una lectura a la bdd
+
+
 
         database=FirebaseDatabase.getInstance().getReference("invoices")
 
         // Se forma objeto producto
-        val invoice = Invoice(numero, tipo, fecha, cliente, concepto, total, foto, tipoMov, userID)
+        val invoice = Invoice(numero, tipo, fecha, cliente, concepto, total, foto, tipoMov, userID, invoiceID)
 
         if (accion == "a") { //Agregar registro
-            database.child(numero).setValue(invoice).addOnSuccessListener {
+
+            database.child(invoiceID).setValue(invoice).addOnSuccessListener {
                 Toast.makeText(this,getString(R.string.toast_addinvoice_uploadSuccess), Toast.LENGTH_SHORT).show()
             }.addOnFailureListener{
                 Toast.makeText(this,getString(R.string.toast_addinvoice_uploadFailed), Toast.LENGTH_SHORT).show()
             }
         } else  // Editar registro
         {
-            val key = database.child("numero").push().key
+            val key = database.child("invoiceID").push().key
             if (key == null) {
                 Toast.makeText(this,getString(R.string.toast_addinvoice_keyEmpty), Toast.LENGTH_SHORT).show()
             }
@@ -218,7 +247,18 @@ class AddInvoiceActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
+    fun generateUniqueCode(length: Int): String {
+        val allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz0123456789"
+        val sb = StringBuilder(length)
+        val random = Random()
 
+        while (sb.length < length) {
+            val index = (random.nextFloat() * allowedChars.length).toInt()
+            sb.append(allowedChars[index])
+        }
+
+        return sb.toString()
+    }
 
 
 }
