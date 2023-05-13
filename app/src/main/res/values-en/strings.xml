@@ -87,7 +87,7 @@
     <string name="toast_searchEmail_emailempty">Enter an Email please!</string>
     <string name="toast_searchEmail_emailnotvalid">Enter a valid Email</string>
     <string name="toast_searchEmail_emailloggedin">You can\'t make a transfer to the same email account you\'re logged in with :(</string>
-    <string name="toast_searchEmail_emailnotfound">The Email yo are searching for doesn\'t exists in the app :(</string>
+    <string name="toast_searchEmail_emailnotfound">The Email you\'re searching for doesn\'t exists in the app :(</string>
     <string name="toast_searchEmail_emailfound">Email found successfully!</string>
     <!--activity trasnfer-->
     <string name="label_trasnfer_title">TRANSFER</string>
@@ -98,6 +98,16 @@
     <string name="label_transfer_descrip">Concept of the transaction</string>
     <string name="label_transfer_addTransx">TRANSFER</string>
     <string name="tipo_transfer_value">TRANSFER</string>
+    <string name="toast_addtransfer_uploadSuccess">The Transfer was made successfully!</string>
+    <string name="toast_addtransfer_uploadFailed">The Transfer wasn\'t finished due to an error!</string>
+    <!--Validar Campos-->
+    <string name="toast_numFact_empty">The "Invoice Number" is empty!</string>
+    <string name="toast_dateFact_empty">The "Invoice Date" is empty!</string>
+    <string name="toast_provider_empty">The "Invoice Provider" is empty!</string>
+    <string name="toast_description_empty">The "Invoice Number" is empty!</string>
+    <string name="toast_value_empty">The "Invoice Number" is empty!</string>
+    <string name="toast_date_notvalid">Enter a valid "Invoice Date"!</string>
+    <string name="toast_value_notvalid">Enter a "Invoice Value" with two decimals!</string>
     <!--EXTRAS-->
     <string name="label_button1">Delete</string>
     <string name="label_button2">Cancel</string>

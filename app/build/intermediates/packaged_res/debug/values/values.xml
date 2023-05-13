@@ -113,12 +113,21 @@
     <string name="toast_addinvoice_updateSuccessful">¡Se actualizó el Registro con éxito!</string>
     <string name="toast_addinvoice_uploadFailed">¡Ocurrió un error guardando la factura!</string>
     <string name="toast_addinvoice_uploadSuccess">¡Se guardo con éxito la factura!</string>
+    <string name="toast_addtransfer_uploadFailed">¡La Transferencia no fue hecha debido a un error!</string>
+    <string name="toast_addtransfer_uploadSuccess">¡La Transferencia fue hecha correctamente!</string>
+    <string name="toast_dateFact_empty">¡La "Fecha de Factura" esta vacía!</string>
+    <string name="toast_date_notvalid">¡Digite un formato de fecha válido!</string>
+    <string name="toast_description_empty">¡La "Descripción de la Factura" esta vacía!</string>
     <string name="toast_main_userAdded">Usuario Agregado a la Base de Datos</string>
+    <string name="toast_numFact_empty">¡El "Número de Factura" esta vacío!</string>
+    <string name="toast_provider_empty">¡El "Proveedor de la Factura" esta vacío!</string>
     <string name="toast_searchEmail_emailempty">¡Digite un correo porfavor!</string>
     <string name="toast_searchEmail_emailfound">¡Correo encontrado con éxito!</string>
     <string name="toast_searchEmail_emailloggedin">No puedes hacerle una transferencia a la misma cuenta de correo con la que estas ingresado en la aplicación :(</string>
     <string name="toast_searchEmail_emailnotfound">El correo que busca no existe en la aplicación :(</string>
     <string name="toast_searchEmail_emailnotvalid">¡Digite un correo válido!</string>
+    <string name="toast_value_empty">¡El "Monto de la Factura" esta vacío!</string>
+    <string name="toast_value_notvalid">¡Digite un monto con dos decimales!</string>
     <string name="welcome_sign_in">Bienvenido</string>
     <string name="welcome_sign_up">Únete a nuestra aplicación</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

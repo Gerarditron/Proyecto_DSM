@@ -4,19 +4,12 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
-import android.widget.RadioButton
-import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.login_dsm.InvoiceActivity
 import com.example.login_dsm.MainActivity
 import com.example.login_dsm.R
-import com.example.login_dsm.TransferActivity
-import com.example.login_dsm.databinding.ActivityAddInvoiceBinding
-import com.example.login_dsm.datos.Invoice
 import com.example.login_dsm.datos.Users
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -76,19 +69,25 @@ class SearchemailActivity: AppCompatActivity() {
         consultUsers.addValueEventListener( object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 //Leyendo cada uno de los usuarios de la bdd - En este caso solo sera uno
-                for (user in snapshot.getChildren()) {
-                    val data: Users? = user.getValue(Users::class.java)
-                    Toast.makeText(contextMain,getString(R.string.toast_searchEmail_emailfound),Toast.LENGTH_SHORT).show()
+                Log.d("SEARCH-TRANSFER",snapshot.getValue().toString())
+                if (snapshot.getValue() != null){
+                    for (user in snapshot.getChildren()) {
+                        val data: Users? = user.getValue(Users::class.java)
+                        Toast.makeText(contextMain,getString(R.string.toast_searchEmail_emailfound),Toast.LENGTH_SHORT).show()
 
-                    //Mandando a la otra actividad el UID y el Email de la persona a la que le vamos a transferir
-                    val intent = Intent(getBaseContext(), TransferActivity::class.java)
-                    intent.putExtra("uidReceiver",data?.uid.toString())
-                    intent.putExtra("emailReceiver",data?.email.toString())
-                    intent.putExtra("nameReceiver",data?.name.toString())
-                    startActivity(intent)
-
+                        //Mandando a la otra actividad el UID y el Email de la persona a la que le vamos a transferir
+                        val intent = Intent(getBaseContext(), TransferActivity::class.java)
+                        intent.putExtra("uidReceiver",data?.uid.toString())
+                        intent.putExtra("emailReceiver",data?.email.toString())
+                        intent.putExtra("nameReceiver",data?.name.toString())
+                        startActivity(intent)
+                    }
+                } else {
+                    Toast.makeText(contextMain, getString(R.string.toast_searchEmail_emailnotfound), Toast.LENGTH_SHORT).show()
                 }
+
             }
+
 
             override fun onCancelled(error: DatabaseError) {
                 //Fallo la conexion

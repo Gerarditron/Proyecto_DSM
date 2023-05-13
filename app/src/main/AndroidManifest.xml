@@ -18,7 +18,7 @@
         android:theme="@style/Theme.LoginDSM"
         tools:targetApi="31">
         <activity
-            android:name=".TransferActivity"
+            android:name=".transfer.TransferActivity"
             android:exported="false" />
         <activity
             android:name=".InvoiceRegister"

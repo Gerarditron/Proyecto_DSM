@@ -97,7 +97,16 @@
     <string name="label_transfer_descrip">Descripción de la transferencia</string>
     <string name="label_transfer_addTransx">TRANSFERIR</string>
     <string name="tipo_transfer_value">TRANSFERENCIA</string>
-
+    <string name="toast_addtransfer_uploadSuccess">¡La Transferencia fue hecha correctamente!</string>
+    <string name="toast_addtransfer_uploadFailed">¡La Transferencia no fue hecha debido a un error!</string>
+    <!--Validar Campos-->
+    <string name="toast_numFact_empty">¡El "Número de Factura" esta vacío!</string>
+    <string name="toast_dateFact_empty">¡La "Fecha de Factura" esta vacía!</string>
+    <string name="toast_provider_empty">¡El "Proveedor de la Factura" esta vacío!</string>
+    <string name="toast_description_empty">¡La "Descripción de la Factura" esta vacía!</string>
+    <string name="toast_value_empty">¡El "Monto de la Factura" esta vacío!</string>
+    <string name="toast_date_notvalid">¡Digite un formato de fecha válido!</string>
+    <string name="toast_value_notvalid">¡Digite un monto con dos decimales!</string>
     <!--EXTRAS-->
     <string name="label_button1">Eliminar</string>
     <string name="label_button2">Cancelar</string>

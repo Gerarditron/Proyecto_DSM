@@ -226,12 +226,12 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\gerar\.gr
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:18:9-46
 	android:dataExtractionRules
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:13:9-65
-activity#com.example.login_dsm.TransferActivity
+activity#com.example.login_dsm.transfer.TransferActivity
 ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:21:13-54
 activity#com.example.login_dsm.InvoiceRegister
 ADDED from C:\Users\gerar\OneDrive\Escritorio\Proyecto_DSM\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported

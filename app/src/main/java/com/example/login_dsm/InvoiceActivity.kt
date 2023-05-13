@@ -18,7 +18,7 @@ import com.example.login_dsm.datos.Invoice
 import com.google.firebase.auth.FirebaseAuth
 
 class InvoiceActivity : AppCompatActivity() {
-    var consultaOrdenada: Query = InvoiceActivity.refInvoices.orderByChild("numero")
+    var consultaOrdenada: Query = InvoiceActivity.refInvoices.orderByChild("fecha")
     var invoices: MutableList<Invoice>? = null
     var listInvoices: ListView? = null
 
@@ -68,6 +68,9 @@ class InvoiceActivity : AppCompatActivity() {
                     invoices!![position].numero?.let {
                         InvoiceActivity.refInvoices.child(it).removeValue()
                     }
+                    /*invoices!![position].invoiceID?.let {
+                        InvoiceActivity.refInvoices.child(it).removeValue()
+                    }*/
                     Toast.makeText(
                         this@InvoiceActivity,
                         getString(R.string.label_record_deleted), Toast.LENGTH_SHORT

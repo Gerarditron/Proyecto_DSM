@@ -86,11 +86,13 @@ class MainActivity : AppCompatActivity() {
                 for (fact in snapshot.getChildren()) {
                     val data: Invoice? = fact.getValue(Invoice::class.java)
 
-                    //Evaluando si es una abono/cargo
-                    if (data?.tipoMov.toString() == "PAY"){
-                        actualMoney += data?.total?.toDouble() ?: 0.00
-                    } else if (data?.tipoMov.toString() == "POST"){
-                        actualMoney -= data?.total?.toDouble() ?: 0.00
+                    //Evaluando si es una abono/cargo por si se llegará a hacer una transacción vacía por error y existe en la bdd mejor no contarla
+                    if (data?.total?.isNotEmpty() == true) {
+                        if (data?.tipoMov.toString() == "PAY"){
+                            actualMoney += data?.total?.toDouble() ?: 0.00
+                        } else if (data?.tipoMov.toString() == "POST"){
+                            actualMoney -= data?.total?.toDouble() ?: 0.00
+                        }
                     }
 
                     Log.d("MAIN",data?.total.toString() + " -tipoMov: "+ data?.tipoMov.toString())
