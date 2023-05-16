@@ -38,6 +38,10 @@ class AddInvoiceActivity : AppCompatActivity() {
     private var edtConcepto: EditText? = null
     private var edtTotal: EditText? = null
     private var edtfoto: EditText? = null
+    private lateinit var txtTipFact: TextInputLayout
+    private lateinit var rdGroup: RadioGroup
+    private lateinit var rdPay: RadioButton
+    private lateinit var rdPost: RadioButton
     private var key = ""
     private var numero = ""
     private var tipo = ""
