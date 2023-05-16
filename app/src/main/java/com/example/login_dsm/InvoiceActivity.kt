@@ -17,7 +17,8 @@ import com.example.login_dsm.datos.Invoice
 import com.google.firebase.auth.FirebaseAuth
 
 class InvoiceActivity : AppCompatActivity() {
-    var consultaOrdenada: Query = InvoiceActivity.refInvoices.orderByChild("numero")
+    var consultaOrdenada: Query = InvoiceActivity.refInvoices.orderByChild("userID").equalTo(auth.uid)
+
     var invoices: MutableList<Invoice>? = null
     var listInvoices: ListView? = null
 
@@ -126,8 +127,10 @@ class InvoiceActivity : AppCompatActivity() {
     }
 
     companion object {
+        var auth : FirebaseAuth = FirebaseAuth.getInstance()
         var database: FirebaseDatabase = FirebaseDatabase.getInstance()
         var refInvoices: DatabaseReference = database.getReference("invoices")
+        var refSuppliers: DatabaseReference = database.getReference("suppliers")
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){

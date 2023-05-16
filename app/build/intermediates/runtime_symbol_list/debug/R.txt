@@ -73,6 +73,7 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001d
 int animator mtrl_fab_show_motion_spec 0x7f02001e
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f02001f
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020020
+int array Languages 0x7f150000
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -2706,6 +2707,7 @@ int dimen tooltip_precise_anchor_threshold 0x7f0602d4
 int dimen tooltip_vertical_padding 0x7f0602d5
 int dimen tooltip_y_offset_non_touch 0x7f0602d6
 int dimen tooltip_y_offset_touch 0x7f0602d7
+int drawable _935764 0x7f070118
 int drawable abc_ab_share_pack_mtrl_alpha 0x7f070029
 int drawable abc_action_bar_item_background_material 0x7f07002a
 int drawable abc_btn_borderless_material 0x7f07002b
@@ -3064,6 +3066,7 @@ int id browser_actions_menu_item_text 0x7f080073
 int id browser_actions_menu_items 0x7f080074
 int id browser_actions_menu_view 0x7f080075
 int id btnAddFact 0x7f080076
+int id btnAddSupplier 0x7f0802aa
 int id btnAddTransf 0x7f080077
 int id btnCancel 0x7f080078
 int id btnCancelTransf 0x7f080079
@@ -3171,7 +3174,6 @@ int id edtPhone 0x7f0800e0
 int id edtTipo 0x7f0800e1
 int id edtTotal 0x7f0800e2
 int id edtTradename 0x7f0800e3
-int id edtfoto 0x7f0800e4
 int id elastic 0x7f0800e5
 int id embed 0x7f0800e6
 int id end 0x7f0800e7
@@ -3224,7 +3226,6 @@ int id ignoreRequest 0x7f080115
 int id image 0x7f080116
 int id imageView 0x7f080117
 int id imgAddReceipt 0x7f080118
-int id imgClasifMov 0x7f080119
 int id imgEstadistMov 0x7f08011a
 int id imgExtra 0x7f08011b
 int id imgHistoryMov 0x7f08011c
@@ -3250,7 +3251,6 @@ int id lbAccountValue 0x7f08012e
 int id lbAddInvTitle 0x7f08012f
 int id lbAddReceipt 0x7f080130
 int id lbAddSupplierTitle 0x7f080131
-int id lbClasifMov 0x7f080132
 int id lbDetails 0x7f080133
 int id lbEmailLoggedIn 0x7f080134
 int id lbEmailReceiver 0x7f080135
@@ -3287,7 +3287,6 @@ int id linearLayout 0x7f080153
 int id listMode 0x7f080154
 int id list_item 0x7f080155
 int id lyAddReceipt 0x7f080156
-int id lyClasifMov 0x7f080157
 int id lyClient 0x7f080158
 int id lyConcept 0x7f080159
 int id lyDate 0x7f08015a
@@ -3503,6 +3502,7 @@ int id snapMargins 0x7f08022c
 int id south 0x7f08022d
 int id spacer 0x7f08022e
 int id special_effects_controller_view_tag 0x7f08022f
+int id spinner1 0x7f0802a8
 int id spline 0x7f080230
 int id split_action_bar 0x7f080231
 int id spread 0x7f080232
@@ -3589,12 +3589,12 @@ int id txtDateFact 0x7f080282
 int id txtDescFact 0x7f080283
 int id txtDetails 0x7f080284
 int id txtLegalName 0x7f080285
-int id txtLinkImgFact 0x7f080286
 int id txtNIT 0x7f080287
 int id txtNRC 0x7f080288
 int id txtPhone 0x7f080289
 int id txtProvFact 0x7f08028a
 int id txtTipFact 0x7f08028b
+int id txtTipFact1 0x7f0802a9
 int id txtTotalFact 0x7f08028c
 int id txtTradename 0x7f08028d
 int id unchecked 0x7f08028e
@@ -3991,6 +3991,7 @@ int string label_addsupplier_addSupp 0x7f110086
 int string label_addsupplier_title 0x7f110087
 int string label_button1 0x7f110088
 int string label_button2 0x7f110089
+int string label_button3 0x7f110144
 int string label_buttonSignUp_sign_in 0x7f11008a
 int string label_hint_searchEmail 0x7f11008b
 int string label_main_account_title 0x7f11008c
@@ -4139,6 +4140,7 @@ int string search_menu_title 0x7f11011a
 int string searchbar_scrolling_view_behavior 0x7f11011b
 int string searchview_clear_text_content_description 0x7f11011c
 int string searchview_navigation_content_description 0x7f11011d
+int string selected_item 0x7f110143
 int string side_sheet_accessibility_pane_title 0x7f11011e
 int string side_sheet_behavior 0x7f11011f
 int string spinner_addinvoice_payment 0x7f110120

@@ -46,7 +46,7 @@
     <string name="label_main_opc3">ESTATISTICS</string>
     <string name="label_main_opc4">ADD\nRECEIPT</string>
     <string name="label_main_opc5">MAKE A\nTRANSFER</string>
-    <string name="label_main_opc6">EXTRA OPC</string>
+    <string name="label_main_opc6">SUPPLIERS</string>
     <string name="toast_main_userAdded">User added to the database</string>
     <!--activity invoice-->
     <string name="label_whatdoyouneed">What do you want to do?</string>
@@ -111,6 +111,7 @@
     <!--EXTRAS-->
     <string name="label_button1">Delete</string>
     <string name="label_button2">Cancel</string>
+    <string name="label_button3">Selected</string>
     <string name="label_record_deleted">Record Deleted!</string>
     <string name="label_record_deleted_canel">Operation Canceled!</string>
     <!--activity adapter supplier-->

@@ -10,6 +10,8 @@ import com.bumptech.glide.Glide
 import com.google.firebase.database.*
 import com.example.login_dsm.datos.Invoice
 import android.content.res.Resources
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class AdapterInvoice(private val context: Activity, var invoices: List<Invoice>) :
     ArrayAdapter<Invoice?>(context, R.layout.invoice_layout, invoices) {
@@ -29,6 +31,7 @@ class AdapterInvoice(private val context: Activity, var invoices: List<Invoice>)
         val tvFoto = rowview.findViewById<ImageView>(R.id.ivFotoProd)
         //Tipo de Movimiento CARGO o ABONO
         var tvTipoMov : String? = null
+
         tvTipoMov = invoices[position].tipoMov.toString()
         //Declarando todos los valores en la pantalla
         tvNumero.text = invoices[position].numero

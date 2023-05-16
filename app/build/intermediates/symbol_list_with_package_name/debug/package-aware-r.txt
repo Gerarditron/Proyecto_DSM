@@ -74,6 +74,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array Languages
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -2707,6 +2708,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+drawable _935764
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -3065,6 +3067,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnAddFact
+id btnAddSupplier
 id btnAddTransf
 id btnCancel
 id btnCancelTransf
@@ -3172,7 +3175,6 @@ id edtPhone
 id edtTipo
 id edtTotal
 id edtTradename
-id edtfoto
 id elastic
 id embed
 id end
@@ -3225,7 +3227,6 @@ id ignoreRequest
 id image
 id imageView
 id imgAddReceipt
-id imgClasifMov
 id imgEstadistMov
 id imgExtra
 id imgHistoryMov
@@ -3251,7 +3252,6 @@ id lbAccountValue
 id lbAddInvTitle
 id lbAddReceipt
 id lbAddSupplierTitle
-id lbClasifMov
 id lbDetails
 id lbEmailLoggedIn
 id lbEmailReceiver
@@ -3288,7 +3288,6 @@ id linearLayout
 id listMode
 id list_item
 id lyAddReceipt
-id lyClasifMov
 id lyClient
 id lyConcept
 id lyDate
@@ -3504,6 +3503,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner1
 id spline
 id split_action_bar
 id spread
@@ -3590,12 +3590,12 @@ id txtDateFact
 id txtDescFact
 id txtDetails
 id txtLegalName
-id txtLinkImgFact
 id txtNIT
 id txtNRC
 id txtPhone
 id txtProvFact
 id txtTipFact
+id txtTipFact1
 id txtTotalFact
 id txtTradename
 id unchecked
@@ -3992,6 +3992,7 @@ string label_addsupplier_addSupp
 string label_addsupplier_title
 string label_button1
 string label_button2
+string label_button3
 string label_buttonSignUp_sign_in
 string label_hint_searchEmail
 string label_main_account_title
@@ -4140,6 +4141,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string selected_item
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string spinner_addinvoice_payment

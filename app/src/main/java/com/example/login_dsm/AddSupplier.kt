@@ -77,7 +77,53 @@ class AddSupplier : AppCompatActivity() {
         }
 
     }
+    private fun vericarFormulario(): Boolean {
+        var notificacion: String = "Se han generado algunos errores, favor verifiquelos"
+        var response = true
 
+
+        val nombrecomercial: String = edtTradename!!.text.toString().trim()
+        val nrc: String = edtNRC!!.text.toString().trim()
+        val nit: String = edtNIT!!.text.toString().trim()
+        val tel: String = edtPhone!!.text.toString().trim()
+        val detail: String = edtDetails!!.text.toString().trim()
+        val nombrelegal: String = edtLegalname!!.text.toString().trim()
+
+        if (nombrecomercial.isEmpty()) {
+            response = false
+            notificacion = "No se ha digitado un nombre comercial"
+        }
+        if (nrc.isEmpty()) {
+            response = false
+            notificacion = "No se ha digitado un numero de NRC"
+        }
+        if (nit.isEmpty()) {
+            response = false
+            notificacion = "No se ha digitado una numero de NIT"
+        }
+        if (tel.isEmpty()) {
+            response = false
+            notificacion = "No se ha digitado un numero de telefono"
+        }
+        if (detail.isEmpty()) {
+            response = false
+            notificacion = "NNo se ha digitado detalles"
+        }
+        if (nombrelegal.isEmpty()) {
+            response = false
+            notificacion = "No se ha digitado un nombre legal"
+        }
+
+        //Mostrar errores
+        if (response == false) {
+            Toast.makeText(
+                this,
+                notificacion,
+                Toast.LENGTH_LONG
+            ).show()
+        }
+        return response
+    }
     fun guardar(v: View?) {
         val tradename: String = edtTradename?.text.toString()
         val legalname: String = edtLegalname?.text.toString()
@@ -86,32 +132,34 @@ class AddSupplier : AppCompatActivity() {
         val phone: String = edtPhone?.text.toString()
         val details: String = edtDetails?.text.toString()
         val userID: String = FirebaseAuth.getInstance().currentUser?.uid.toString()
+        if (vericarFormulario()) {
+            database= FirebaseDatabase.getInstance().getReference("suppliers")
 
-        database= FirebaseDatabase.getInstance().getReference("suppliers")
+            // Se forma objeto producto
+            val supplier = Supplier(tradename, legalname, nrc, nit, phone, details, userID)
 
-        // Se forma objeto producto
-        val supplier = Supplier(tradename, legalname, nrc, nit, phone, details, userID)
-
-        if (accion == "a") { //Agregar registro
-            database.child(tradename).setValue(supplier).addOnSuccessListener {
+            if (accion == "a") { //Agregar registro
+                database.child(tradename).setValue(supplier).addOnSuccessListener {
+                    Toast.makeText(this,getString(R.string.toast_addsupplier_uploadSuccess), Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener{
+                    Toast.makeText(this,getString(R.string.toast_addsupplier_uploadFailed), Toast.LENGTH_SHORT).show()
+                }
+            } else  // Editar registro
+            {
+                val key = database.child("nrc").push().key
+                if (key == null) {
+                    Toast.makeText(this,getString(R.string.toast_addinvoice_keyEmpty), Toast.LENGTH_SHORT).show()
+                }
+                val suppliersValues = supplier.toMap()
+                val childUpdates = hashMapOf<String, Any>(
+                    "$nrc" to suppliersValues
+                )
+                database.updateChildren(childUpdates)
                 Toast.makeText(this,getString(R.string.toast_addsupplier_uploadSuccess), Toast.LENGTH_SHORT).show()
-            }.addOnFailureListener{
-                Toast.makeText(this,getString(R.string.toast_addsupplier_uploadFailed), Toast.LENGTH_SHORT).show()
             }
-        } else  // Editar registro
-        {
-            val key = database.child("nrc").push().key
-            if (key == null) {
-                Toast.makeText(this,getString(R.string.toast_addinvoice_keyEmpty), Toast.LENGTH_SHORT).show()
-            }
-            val suppliersValues = supplier.toMap()
-            val childUpdates = hashMapOf<String, Any>(
-                "$nrc" to suppliersValues
-            )
-            database.updateChildren(childUpdates)
-            Toast.makeText(this,getString(R.string.toast_addsupplier_uploadSuccess), Toast.LENGTH_SHORT).show()
+            finish()
         }
-        finish()
+
     }
 
     fun cancelar(v: View?) {

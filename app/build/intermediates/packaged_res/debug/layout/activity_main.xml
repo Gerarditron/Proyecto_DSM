@@ -173,33 +173,7 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/lyClasifMov"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/imgClasifMov"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_more" />
-
-                    <TextView
-                        android:id="@+id/lbClasifMov"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="@string/label_main_opc2"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/lyEstadistMov"
@@ -330,7 +304,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_preferences" />
+                        app:srcCompat="@drawable/_935764" />
 
                     <TextView
                         android:id="@+id/lbExtra"

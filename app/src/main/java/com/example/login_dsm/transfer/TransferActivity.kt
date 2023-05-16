@@ -15,6 +15,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import java.util.HashMap
 import java.util.Random
 
@@ -65,6 +67,10 @@ class TransferActivity : AppCompatActivity() {
         btnCancelTransf = findViewById(R.id.btnCancelTransf)
         uploadedImgUri = ""
         //El boton para Abrir la Imagen subida va a aparecer siempre inhabilitado hasta que se suba la foto correspondiente
+        val current = LocalDateTime.now()
+
+        val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+        edtFecha.setText(current.format(formatter))
 
         //Recibiendo los valores de la pantalla anterior
         val datos: Bundle? = intent.getExtras()

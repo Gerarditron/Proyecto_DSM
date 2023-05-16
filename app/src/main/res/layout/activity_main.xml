@@ -304,7 +304,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_preferences" />
+                        app:srcCompat="@drawable/_935764" />
 
                     <TextView
                         android:id="@+id/lbExtra"

@@ -6,46 +6,49 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/lbAddInvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="sans-serif-black"
         android:gravity="center_horizontal"
-        android:hapticFeedbackEnabled="false"
-        android:text="@string/label_addinvoice_title"
+        android:text="@string/label_addinvoice_addFact"
         android:textColor="@color/colorDarkBlue"
         android:textSize="34sp"
         android:textStyle="bold" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/label_addinvoice_provFact"
+        android:inputType="text" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAddSupplier"
+            android:layout_width="301dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="guardar"
+            android:text="Ver Proveedores" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <Button
         android:id="@+id/btnSubirFoto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="40dp"
         android:backgroundTint="@color/colorPrimary"
         android:text="@string/label_addinvoice_btnUploadImg"
         android:textColor="@color/white" />
+</LinearLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtLinkImgFact"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="40dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtfoto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/label_addinvoice_imgLink"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
+
 
     <LinearLayout
         android:id="@+id/lytNumberDate"
@@ -96,6 +99,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtTipFact1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtTipFact"
@@ -111,23 +127,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/label_addinvoice_typeFact"
             android:inputType="text" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtProvFact"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="2dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtCliente"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/label_addinvoice_provFact"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtDescFact"

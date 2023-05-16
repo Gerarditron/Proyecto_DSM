@@ -20,10 +20,13 @@ class SupplierActivity : AppCompatActivity() {
     var consultaOrdenada: Query = SupplierActivity.refSuppliers.orderByChild("nrc")
     var suppliers: MutableList<Supplier>? = null
     var listSuppliers: ListView? = null
+    var accion=""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_supplier)
+        val bundle = intent.extras
+        accion = bundle?.getString("Accion").toString()
         inicializar()
     }
     private fun inicializar() {
@@ -33,7 +36,7 @@ class SupplierActivity : AppCompatActivity() {
         // Cuando el usuario haga clic en la lista (para editar registro)
         listSuppliers!!.setOnItemClickListener(object : AdapterView.OnItemClickListener {
             override fun onItemClick(adapterView: AdapterView<*>?, view: View, i: Int, l: Long) {
-                val intent = Intent(getBaseContext(), AddInvoiceActivity::class.java)
+                val intent = Intent(getBaseContext(), AddSupplier::class.java)
                 intent.putExtra("accion", "e") // Editar
                 intent.putExtra("key", suppliers!![i].key)
                 intent.putExtra("nombrecomercial", suppliers!![i].nombrecomercial)
@@ -62,7 +65,7 @@ class SupplierActivity : AppCompatActivity() {
                     .setTitle("Menu")
                 ad.setPositiveButton(getString(R.string.label_button1)
                 ) { dialog, id ->
-                    suppliers!![position].nrc?.let {
+                    suppliers!![position].nombrecomercial?.let {
                         SupplierActivity.refSuppliers.child(it).removeValue()
                     }
                     Toast.makeText(
@@ -76,6 +79,14 @@ class SupplierActivity : AppCompatActivity() {
                             this@SupplierActivity,
                             getString(R.string.label_record_deleted_canel), Toast.LENGTH_SHORT
                         ).show()
+                    }
+                })
+                ad.setNegativeButton(getString(R.string.label_button3), object : DialogInterface.OnClickListener {
+                    override fun onClick(dialog: DialogInterface, id: Int) {
+                        val intent = Intent(getBaseContext(), AddInvoiceActivity::class.java)
+                        intent.putExtra("NombreComercial", suppliers!![position].nombrelegal)
+                        startActivity(intent)
+                        finish()
                     }
                 })
                 ad.show()
@@ -125,7 +136,7 @@ class SupplierActivity : AppCompatActivity() {
 
     companion object {
         var database: FirebaseDatabase = FirebaseDatabase.getInstance()
-        var refSuppliers: DatabaseReference = database.getReference("Ssuppliers")
+        var refSuppliers: DatabaseReference = database.getReference("suppliers")
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){

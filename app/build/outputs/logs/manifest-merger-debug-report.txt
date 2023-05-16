@@ -219,7 +219,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Program Files\J
 	tools:targetApi
 		ADDED from C:\Users\esteban.gamez\Downloads\DSM-Fase2\Proyecto_DSM\app\src\main\AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from C:\Users\esteban.gamez\Downloads\DSM-Fase2\Proyecto_DSM\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\esteban.gamez\Downloads\DSM-Fase2\Proyecto_DSM\app\src\main\AndroidManifest.xml:15:9-54
 	android:allowBackup
 		ADDED from C:\Users\esteban.gamez\Downloads\DSM-Fase2\Proyecto_DSM\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme

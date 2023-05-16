@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="selected_item" translatable="false">Seleccione Tipo  Factura:</string>
+
+    <string-array name="Languages">
+        <item>Ticket</item>
+        <item>Consumidor Final</item>
+        <item>Credito Fiscal</item>
+        <item>Proforma</item>
+        <item>Ordinaria</item>
+        <item>Rectificativa</item>
+    </string-array>
+</resources>

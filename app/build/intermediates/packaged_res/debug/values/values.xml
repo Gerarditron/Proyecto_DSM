@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="Languages">
+        <item>Ticket</item>
+        <item>Consumidor Final</item>
+        <item>Credito Fiscal</item>
+        <item>Proforma</item>
+        <item>Ordinaria</item>
+        <item>Rectificativa</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="celeste">#62CDFF</color>
     <color name="colorAccent">#03DAC5</color>
@@ -62,10 +70,11 @@
     <string name="label_addinvoice_title">AGREGAR FACTURA</string>
     <string name="label_addinvoice_typeFact">Tipo Factura</string>
     <string name="label_addinvoice_valueFact">Monto</string>
-    <string name="label_addsupplier_addSupp">AGREGAR FACTURA</string>
+    <string name="label_addsupplier_addSupp">AGREGAR PROVEEDOR</string>
     <string name="label_addsupplier_title">AGREGAR PROVEEDOR</string>
     <string name="label_button1">Eliminar</string>
     <string name="label_button2">Cancelar</string>
+    <string name="label_button3">Seleecionar</string>
     <string name="label_buttonSignUp_sign_in">REGISTRATE</string>
     <string name="label_hint_searchEmail">Digite el correo que desea buscar</string>
     <string name="label_main_account_title">VALOR DE CUENTA DE REGISTROS</string>
@@ -76,7 +85,7 @@
     <string name="label_main_opc3">ESTADISTICAS</string>
     <string name="label_main_opc4">AGREGAR\nFACTURAS</string>
     <string name="label_main_opc5">HACER UNA\nTRANSACCIÓN</string>
-    <string name="label_main_opc6">EXTRA OPC</string>
+    <string name="label_main_opc6">PROVEEDORES</string>
     <string name="label_main_title">FACT-APP</string>
     <string name="label_main_transf_title">TRANSFERENCIAS</string>
     <string name="label_main_user_title">USUARIO: </string>
@@ -109,6 +118,7 @@
     <string name="password_sign_in">Contraseña</string>
     <string name="password_sign_up">Contraseña</string>
     <string name="project_id" translatable="false">login-9618b</string>
+    <string name="selected_item" translatable="false">Seleccione Tipo  Factura:</string>
     <string name="spinner_addinvoice_payment">ABONO</string>
     <string name="spinner_addinvoice_post">CARGO</string>
     <string name="spinner_hint_paymentPost">Seleccione el Tipo de Movimiento</string>

@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array Languages
 color black
 color celeste
 color colorAccent
@@ -20,6 +21,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable _935764
 drawable git32
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -37,6 +39,7 @@ id SignUpProgress
 id SignUpText
 id action_sign_out
 id btnAddFact
+id btnAddSupplier
 id btnAddTransf
 id btnCancel
 id btnCancelTransf
@@ -56,11 +59,9 @@ id edtPhone
 id edtTipo
 id edtTotal
 id edtTradename
-id edtfoto
 id fab_agregar
 id imageView
 id imgAddReceipt
-id imgClasifMov
 id imgEstadistMov
 id imgExtra
 id imgHistoryMov
@@ -72,7 +73,6 @@ id lbAccountValue
 id lbAddInvTitle
 id lbAddReceipt
 id lbAddSupplierTitle
-id lbClasifMov
 id lbDetails
 id lbEmailLoggedIn
 id lbEmailReceiver
@@ -100,7 +100,6 @@ id lbTransfers
 id lbphone
 id linearLayout
 id lyAddReceipt
-id lyClasifMov
 id lyClient
 id lyConcept
 id lyDate
@@ -144,6 +143,7 @@ id signUpEmail
 id signUpName
 id signUpPassword
 id signUpPasswordLayout
+id spinner1
 id tvCliente
 id tvConcepto
 id tvDetails
@@ -162,12 +162,12 @@ id txtDateFact
 id txtDescFact
 id txtDetails
 id txtLegalName
-id txtLinkImgFact
 id txtNIT
 id txtNRC
 id txtPhone
 id txtProvFact
 id txtTipFact
+id txtTipFact1
 id txtTotalFact
 id txtTradename
 layout activity_add_invoice
@@ -239,6 +239,7 @@ string label_addsupplier_addSupp
 string label_addsupplier_title
 string label_button1
 string label_button2
+string label_button3
 string label_buttonSignUp_sign_in
 string label_hint_searchEmail
 string label_main_account_title
@@ -282,6 +283,7 @@ string name_sign_up
 string password_sign_in
 string password_sign_up
 string project_id
+string selected_item
 string spinner_addinvoice_payment
 string spinner_addinvoice_post
 string spinner_hint_paymentPost

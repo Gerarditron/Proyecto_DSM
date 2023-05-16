@@ -31,6 +31,7 @@ class   MainActivity : AppCompatActivity() {
     private lateinit var lbAccountValue: TextView
     private lateinit var lbEmailLoggedIn: TextView
     private lateinit var btnMakeTransfer: ImageView
+    private lateinit var btnSupplier: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -40,6 +41,7 @@ class   MainActivity : AppCompatActivity() {
         lbEmailLoggedIn = findViewById(R.id.lbEmailLoggedIn)
         lbAccountValue = findViewById(R.id.lbAccountValue)
         btnMakeTransfer = findViewById(R.id.imgMakeTransf)
+        btnSupplier = findViewById(R.id.imgExtra)
         //Autenticandose con Firebase
         auth = FirebaseAuth.getInstance()
         val email = auth.currentUser
@@ -104,6 +106,7 @@ class   MainActivity : AppCompatActivity() {
         //Abriendo el Agregar Factura
         btnAddFact.setOnClickListener {
             val intent = Intent(this, AddInvoiceActivity::class.java)
+            intent.putExtra("NombreComercial", "Seleccione un proveedor")
             startActivity(intent)
         }
 
@@ -115,7 +118,11 @@ class   MainActivity : AppCompatActivity() {
         }
 
 
-        //Abriendo la opcion extra
+        //Abriendo los proveedores
+        btnSupplier.setOnClickListener {
+            val intent = Intent(this, SupplierActivity::class.java)
+            startActivity(intent)
+        }
 
 
 

@@ -19,7 +19,7 @@ class AdapterSupplier(private val context: Activity, var suppliers: List<Supplie
         var rowview: View? = null
         // optimizando las diversas llamadas que se realizan a este método
         // pues a partir de la segunda llamada el objeto view ya viene formado
-        rowview = view ?: layoutInflater.inflate(R.layout.invoice_layout, null)
+        rowview = view ?: layoutInflater.inflate(R.layout.supplier_layout, null)
         val tvNombreComercial = rowview!!.findViewById<TextView>(R.id.tvTradename)
         val tvNombrelegal = rowview.findViewById<TextView>(R.id.tvLegalName)
         val tvNRC = rowview!!.findViewById<TextView>(R.id.tvNRC)
