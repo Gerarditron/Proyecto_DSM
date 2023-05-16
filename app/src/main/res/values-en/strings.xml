@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--ENGLISH-->
     <string name="app_name">FactApp-DSM</string>
     <string name="all">EVERYTHING</string>
-    <string name="facebook_app_id">799503694841303</string>
-    <string name="fb_login_protocol_scheme">fb799503694841303</string>
-    <string name="facebook_client_token">56789</string>
+    <string name="menu_close_session">Close Session</string>
     <!--activity_sign_in-->
     <string name="welcome_sign_in">Welcome</string>
-    <string name="title_sing_in">Enter your Account</string>
+    <string name="title_sign_in">Enter your Account</string>
     <string name="email_sign_in">Email</string>
     <string name="password_sign_in">Password</string>
     <string name="accept_sign_in">SIGN IN</string>
     <string name="label_sign_in">Don\'t have an account yet?</string>
     <string name="label_buttonSignUp_sign_in">SIGN UP</string>
+    <string name="button_google_sign_in">GOOGLE</string>
+    <string name="button_facebook_sign_in">FACEBOOK</string>
+    <string name="msg_singin_enteremail">Enter an E-mail!</string>
+    <string name="msg_singin_enterpassword">Enter a Password!</string>
+    <string name="msg_singin_enterdatacorrectly">Enter the characters correctly, please!</string>
+    <string name="msg_singin_enteremail_valid">Enter a valid E-mail, please!</string>
+    <string name="msg_singin_enterpassword_valid">Enter a password with at least 6 characters!</string>
+    <string name="msg_singin_commonerror">Something went wrong, try it again!</string>
+    <string name="msg_singin_email_notexist">The selected Email doesn´t exist!</string>
     <!--activity_sign_up-->
     <string name="welcome_sign_up">Join our app today</string>
     <string name="title_sign_up">Sign Up</string>
@@ -23,7 +31,70 @@
     <string name="accept_sign_up">SIGN UP</string>
     <string name="label_sign_up">Already have an account?</string>
     <string name="buttonLabel_signIn_sign_up">SIGN IN</string>
-
+    <string name="msg_singup_enterusername">Add a Username!</string>
+    <string name="msg_singup_enterpassword_again">Enter password again, please!</string>
+    <string name="msg_singup_enterpassword_notmatch">Your passwords don´t match! :(</string>
     <!--activity-main-->
-
+    <string name="label_main_title">FACT-APP</string>
+    <string name="label_main_account_title">AMOUNT REGISTERED IN YOUR ACCOUNT</string>
+    <string name="label_main_user_title">USER: </string>
+    <string name="label_main_email_title">EMAIL: </string>
+    <string name="label_main_mov_title">MOVEMENTS</string>
+    <string name="label_main_transf_title">TRANSFER</string>
+    <string name="label_main_opc1">MOVEMENTS</string>
+    <string name="label_main_opc2">FILTER\nMOVEMENTS</string>
+    <string name="label_main_opc3">ESTATISTICS</string>
+    <string name="label_main_opc4">ADD\nRECEIPT</string>
+    <string name="label_main_opc5">MAKE A\nTRANSFER</string>
+    <string name="label_main_opc6">SUPPLIER</string>
+    <!--activity invoice-->
+    <string name="label_whatdoyouneed">What do you want to do?</string>
+    <!--activtiy add invoice-->
+    <string name="label_addinvoice_title">ADD INVOICE/RECEIPT</string>
+    <string name="label_addinvoice_btnUploadImg">UPLOAD IMAGE</string>
+    <string name="label_addinvoice_imgLink">Add Image Link</string>
+    <string name="label_addinvoice_numFact">Invoice Number</string>
+    <string name="label_addinvoice_dateFact">Invoice Date</string>
+    <string name="label_addinvoice_typeFact">Invoice Type</string>
+    <string name="label_addinvoice_provFact">Supplier</string>
+    <string name="label_addinvoice_descripFact">Description</string>
+    <string name="label_addinvoice_valueFact">Value</string>
+    <string name="label_addinvoice_addFact">ADD INVOICE</string>
+    <string name="label_addinvoice_cancelFact">CANCEL</string>
+    <string name="spinner_hint_paymentPost">Select payment/post</string>
+    <string name="spinner_addinvoice_payment">PAYMENT</string>
+    <string name="spinner_addinvoice_post">POST</string>
+    <string name="toast_addinvoice_uploadSuccess">The Receipt was uploaded successfully!</string>
+    <string name="toast_addinvoice_uploadFailed">The Receipt wasn\'t uploaded due to an error!</string>
+    <string name="toast_addinvoice_keyEmpty">The Key doesn\'t exists</string>
+    <string name="toast_addinvoice_updateSuccessful">The Update was Successful!</string>
+    <string name="toast_addinvoice_sessionClosed">Closed Session</string>
+    <string name="toast_addinvoice_foto_upload">¡Foto upload correctly!</string>
+    <!--activity adapter-->
+    <string name="label_adapter_fact_number">Number:</string>
+    <string name="label_adapter_fact_type">Type:</string>
+    <string name="label_adapter_fact_date">Invoice Date:</string>
+    <string name="label_adapter_fact_client">Client:</string>
+    <string name="label_adapter_fact_descrip">Description:</string>
+    <string name="label_adapter_fact_total">Value:</string>
+    <!--EXTRAS-->
+    <string name="label_button1">Delete</string>
+    <string name="label_button2">Cancel</string>
+    <string name="label_record_deleted">Record Deleted!</string>
+    <string name="label_record_deleted_canel">Operation Canceled!</string>
+    <!--activity adapter supplier-->
+    <string name="label_adapter_supplier_tradename">TradeName: </string>
+    <string name="label_adapter_supplier_legalname">Legal Name: </string>
+    <string name="label_adapter_supplier_NRC">NRC: </string>
+    <string name="label_adapter_supplier_NIT">NIT: </string>
+    <string name="label_adapter_supplier_phone">Phones: </string>
+    <string name="label_adapter_supplier_details">Others details: </string>
+    <!--activity add supplier-->
+    <string name="label_addsupplier_title">ADD SUPPLIER</string>
+    <string name="label_addsupplier_addSupp">ADD SUPPLIER</string>
+    <string name="toast_addsupplier_uploadSuccess">The Supplier was uploaded successfully!</string>
+    <string name="toast_addsupplier_uploadFailed">The Supplier wasn\'t uploaded due to an error!</string>
+    <string name="toast_addsupplier_keyEmpty">The Key doesn\'t exists</string>
+    <string name="toast_addsupplier_updateSuccessful">The Update was Successful!</string>
+    <string name="toast_addsupplier_sessionClosed">Closed Session</string>
 </resources>
