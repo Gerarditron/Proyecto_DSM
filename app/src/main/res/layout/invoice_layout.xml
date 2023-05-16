@@ -152,7 +152,6 @@
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
     </LinearLayout>
-    <!--
     <ImageView
         android:id="@+id/ivFotoProd"
         android:layout_width="match_parent"
@@ -160,7 +159,7 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/img1"
         tools:srcCompat="@drawable/img1" />
-    -->
+
     <LinearLayout
         android:id="@+id/lyTotal"
         android:layout_width="match_parent"

@@ -31,10 +31,28 @@ class InvoiceActivity : AppCompatActivity() {
         val fab_agregar: FloatingActionButton = findViewById<FloatingActionButton>(R.id.fab_agregar)
         listInvoices = findViewById<ListView>(R.id.ListInvoice)
 
+        invoices = ArrayList<Invoice>()
+
+        fab_agregar.setOnClickListener(View.OnClickListener {
+            // Cuando el usuario quiere agregar un nuevo registro
+            val i = Intent(getBaseContext(), AddInvoiceActivity::class.java)
+            i.putExtra("accion", "a") // Agregar
+            i.putExtra("key", "")
+            i.putExtra("numero", "")
+            i.putExtra("tipo", "")
+            i.putExtra("fecha", "")
+            i.putExtra("cliente", "")
+            i.putExtra("concepto", "")
+            i.putExtra("total", "")
+            i.putExtra("foto", "")
+            startActivity(i)
+        })
+
+
         // Cuando el usuario haga clic en la lista (para editar registro)
         listInvoices!!.setOnItemClickListener(object : AdapterView.OnItemClickListener {
             override fun onItemClick(adapterView: AdapterView<*>?, view: View, i: Int, l: Long) {
-                val intent = Intent(getBaseContext(), AddInvoiceActivity::class.java)
+                val intent = Intent(baseContext, AddInvoiceActivity::class.java)
                 intent.putExtra("accion", "e") // Editar
                 intent.putExtra("key", invoices!![i].key)
                 intent.putExtra("numero", invoices!![i].numero)
@@ -88,22 +106,6 @@ class InvoiceActivity : AppCompatActivity() {
                 return true
             }
         }
-
-        fab_agregar.setOnClickListener(View.OnClickListener {
-            // Cuando el usuario quiere agregar un nuevo registro
-            val i = Intent(getBaseContext(), AddInvoiceActivity::class.java)
-            i.putExtra("accion", "a") // Agregar
-            i.putExtra("key", "")
-            i.putExtra("numero", "")
-            i.putExtra("tipo", "")
-            i.putExtra("fecha", "")
-            i.putExtra("cliente", "")
-            i.putExtra("concepto", "")
-            i.putExtra("total", "")
-            i.putExtra("foto", "")
-            startActivity(i)
-        })
-        invoices = ArrayList<Invoice>()
 
         // Cambiarlo a consultaOrdenada para ordenar lista
         consultaOrdenada.addValueEventListener(object : ValueEventListener {

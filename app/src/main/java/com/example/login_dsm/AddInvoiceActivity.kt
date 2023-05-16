@@ -63,7 +63,7 @@ class AddInvoiceActivity : AppCompatActivity() {
     val myRef = database1.getReference("invoicesPictures")
     private lateinit var binding: ActivityAddInvoiceBinding
 
-    private  var tipoMovSel: String = "POST"
+    private var tipoMovSel: String = "POST"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

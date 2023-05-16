@@ -26,7 +26,7 @@ class AdapterInvoice(private val context: Activity, var invoices: List<Invoice>)
         val tvCliente = rowview.findViewById<TextView>(R.id.tvCliente)
         val tvConcepto = rowview.findViewById<TextView>(R.id.tvConcepto)
         val tvTotal = rowview.findViewById<TextView>(R.id.tvTotal)
-        //val tvFoto = rowview.findViewById<ImageView>(R.id.ivFotoProd)
+        val tvFoto = rowview.findViewById<ImageView>(R.id.ivFotoProd)
         //Tipo de Movimiento CARGO o ABONO
         var tvTipoMov : String? = null
         tvTipoMov = invoices[position].tipoMov.toString()
