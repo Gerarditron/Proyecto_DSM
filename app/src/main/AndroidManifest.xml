@@ -47,6 +47,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
+        <activity
+            android:name=".transfer.SearchemailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".transfer.TransferActivity"
+            android:exported="false" />
 
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
