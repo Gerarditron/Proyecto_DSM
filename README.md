@@ -17,8 +17,8 @@ donde se puede tener una administración y gestión estructurada de las facturas
 ## Enlaces de Interés 🌐 📄
 - [Perfil del Proyecto](https://drive.google.com/file/d/1hY1cYvZzR9MZxBXx2ABxc3Jo51fPzkgf/view?usp=sharing) 🧩
 - [Trello](https://trello.com/invite/proyectodsm5/ATTI98151732d8b4627afa37dfa25fe53fb66EE4A440) ♟️
-- [Manual de Usuario]() -> En Desarrollo 👥
-- [Manual Tecnico]() -> En Desarrollo 🔧
+- [Manual de Usuario](https://www.canva.com/design/DAFjDeISMdg/XsMM5oCIU9_cyr7fTj1IdA/view?utm_content=DAFjDeISMdg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)👥
+- [Manual Tecnico](https://www.canva.com/design/DAFjDuf9ipg/MMGcm7fhM-c2o3MS9JAZ5Q/view?utm_content=DAFjDuf9ipg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) 🔧
 
 ## Licencia 🔒️
 Este proyecto tiene un propósito enteramente académico, trabajado para la materia de
