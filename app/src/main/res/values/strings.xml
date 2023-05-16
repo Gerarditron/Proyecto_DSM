@@ -45,7 +45,7 @@
     <string name="label_main_opc3">ESTADISTICAS</string>
     <string name="label_main_opc4">AGREGAR\nFACTURAS</string>
     <string name="label_main_opc5">HACER UNA\nTRANSACCIÓN</string>
-    <string name="label_main_opc6">EXTRA OPC</string>
+    <string name="label_main_opc6">PROVEEDORES</string>
     <!--activity invoice-->
     <string name="label_whatdoyouneed">¿Que desea hacer?</string>
     <!--activtiy add invoice-->
@@ -81,5 +81,19 @@
     <string name="label_button2">Cancelar</string>
     <string name="label_record_deleted">¡Registro Eliminado!</string>
     <string name="label_record_deleted_canel">¡Operación de borrado cancelada!</string>
-
+    <!--activity adapter supplier-->
+    <string name="label_adapter_supplier_tradename">Nombre comercial: </string>
+    <string name="label_adapter_supplier_legalname">Nombre legal: </string>
+    <string name="label_adapter_supplier_NRC">NRC: </string>
+    <string name="label_adapter_supplier_NIT">NIT: </string>
+    <string name="label_adapter_supplier_phone">Telefonos: </string>
+    <string name="label_adapter_supplier_details">Otros detalles: </string>
+    <!--activity add supplier-->
+    <string name="label_addsupplier_title">AGREGAR PROVEEDOR</string>
+    <string name="label_addsupplier_addSupp">AGREGAR FACTURA</string>
+    <string name="toast_addsupplier_uploadSuccess">¡Se guardo con éxito el proveedor!</string>
+    <string name="toast_addsupplier_uploadFailed">¡Ocurrió un error guardando el proveedor!</string>
+    <string name="toast_addsupplier_keyEmpty">La llave no existe</string>
+    <string name="toast_addsupplier_updateSuccessful">¡Se actualizó el Registro con éxito!</string>
+    <string name="toast_addsupplier_sessionClosed">Sesión Cerrada</string>
 </resources>

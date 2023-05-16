@@ -4,7 +4,7 @@
             "outputFile": "com.example.login_dsm.app-mergeDebugResources-38:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\b1d0acd5fc198e352bfe73af0b3d0e94\\transformed\\material-1.8.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Program Files\\Java\\jdk-19\\caches\\transforms-3\\b1d0acd5fc198e352bfe73af0b3d0e94\\transformed\\material-1.8.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

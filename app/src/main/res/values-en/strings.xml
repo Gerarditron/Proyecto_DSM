@@ -46,7 +46,7 @@
     <string name="label_main_opc3">ESTATISTICS</string>
     <string name="label_main_opc4">ADD\nRECEIPT</string>
     <string name="label_main_opc5">MAKE A\nTRANSFER</string>
-    <string name="label_main_opc6">EXTRA OPC</string>
+    <string name="label_main_opc6">SUPPLIER</string>
     <!--activity invoice-->
     <string name="label_whatdoyouneed">What do you want to do?</string>
     <!--activtiy add invoice-->
@@ -82,8 +82,19 @@
     <string name="label_button2">Cancel</string>
     <string name="label_record_deleted">Record Deleted!</string>
     <string name="label_record_deleted_canel">Operation Canceled!</string>
-
-
-
-
+    <!--activity adapter supplier-->
+    <string name="label_adapter_supplier_tradename">TradeName: </string>
+    <string name="label_adapter_supplier_legalname">Legal Name: </string>
+    <string name="label_adapter_supplier_NRC">NRC: </string>
+    <string name="label_adapter_supplier_NIT">NIT: </string>
+    <string name="label_adapter_supplier_phone">Phones: </string>
+    <string name="label_adapter_supplier_details">Others details: </string>
+    <!--activity add supplier-->
+    <string name="label_addsupplier_title">ADD SUPPLIER</string>
+    <string name="label_addsupplier_addSupp">ADD SUPPLIER</string>
+    <string name="toast_addsupplier_uploadSuccess">The Supplier was uploaded successfully!</string>
+    <string name="toast_addsupplier_uploadFailed">The Supplier wasn\'t uploaded due to an error!</string>
+    <string name="toast_addsupplier_keyEmpty">The Key doesn\'t exists</string>
+    <string name="toast_addsupplier_updateSuccessful">The Update was Successful!</string>
+    <string name="toast_addsupplier_sessionClosed">Closed Session</string>
 </resources>

@@ -4,7 +4,7 @@
             "outputFile": "com.example.login_dsm.app-mergeDebugResources-38:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\66780b6d0ab0ea838791606c6a5077a2\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Program Files\\Java\\jdk-19\\caches\\transforms-3\\66780b6d0ab0ea838791606c6a5077a2\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\gerar\\.gradle\\caches\\transforms-3\\b1d0acd5fc198e352bfe73af0b3d0e94\\transformed\\material-1.8.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\esteban.gamez\\Downloads\\DSM-Fase2\\Proyecto_DSM\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "797"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1263"
+                    }
+                },
+                {
+                    "source": "C:\\Program Files\\Java\\jdk-19\\caches\\transforms-3\\b1d0acd5fc198e352bfe73af0b3d0e94\\transformed\\material-1.8.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,25 +54,6 @@
                         "startOffsets": "1268,1343,1454,1543,1644,1751,1858,1957,2064,2167,2255,2379,2481,2583,2699,2801,2915,3043,3159,3281,3417,3537,3671,3791,3903,4118,4235,4359,4489,4611,4749,4883,4999",
                         "endColumns": "74,110,88,100,106,106,98,106,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "1338,1449,1538,1639,1746,1853,1952,2059,2162,2250,2374,2476,2578,2694,2796,2910,3038,3154,3276,3412,3532,3666,3786,3898,4024,4230,4354,4484,4606,4744,4878,4994,5114"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\gerar\\OneDrive\\Escritorio\\Proyecto_DSM\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "811"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "687",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "1263"
                     }
                 }
             ]

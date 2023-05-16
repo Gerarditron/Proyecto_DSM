@@ -47,6 +47,7 @@ class AddInvoiceActivity : AppCompatActivity() {
     private var total = ""
     private var accion = ""
     private var userID = ""
+    private var link = ""
     private lateinit var  database:DatabaseReference
     private val File = 1
     private val database1 = Firebase.database
@@ -104,12 +105,15 @@ class AddInvoiceActivity : AppCompatActivity() {
                             HashMap<String, String>()
                         hashMap["link"] = java.lang.String.valueOf(uri)
                         myRef.setValue(hashMap)
+                        link=java.lang.String.valueOf(uri)
+                        Log.d("uri", link)
                         Toast.makeText(
                             this,
                             this.getString(R.string.toast_addinvoice_foto_upload), Toast.LENGTH_SHORT
                         ).show()
                     }
                 }
+                edtfoto?.setText(link.toString())
             }
         }
     }
@@ -154,7 +158,7 @@ class AddInvoiceActivity : AppCompatActivity() {
             edtTotal.setText(intent.getStringExtra("total").toString())
         }
         if (datos != null) {
-            edtfoto.setText(intent.getStringExtra("foto").toString())
+            edtfoto.setText(link.toString())
         }
         if (datos != null) {
             accion = datos.getString("accion").toString()
@@ -170,7 +174,7 @@ class AddInvoiceActivity : AppCompatActivity() {
         val cliente: String = edtCliente?.text.toString()
         val concepto: String = edtConcepto?.text.toString()
         val total: String = edtTotal?.text.toString()
-        val foto: String = edtfoto?.text.toString()
+        val foto: String = link.toString()
         val tipoMov: String? = tipoMovSel
         val userID: String = FirebaseAuth.getInstance().currentUser?.uid.toString()
 

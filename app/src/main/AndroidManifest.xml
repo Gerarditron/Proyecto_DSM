@@ -18,6 +18,9 @@
         android:theme="@style/Theme.LoginDSM"
         tools:targetApi="31">
         <activity
+            android:name=".AddSupplier"
+            android:exported="false" />
+        <activity
             android:name=".InvoiceRegister"
             android:exported="false" />
         <activity
@@ -27,14 +30,8 @@
             android:name=".InvoiceActivity"
             android:exported="false" />
         <activity
-            android:name=".AddInvoiceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SupplierActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,11 +39,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".AddInvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
-
-
     </application>
 
 </manifest>

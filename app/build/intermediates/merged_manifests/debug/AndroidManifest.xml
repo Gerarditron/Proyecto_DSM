@@ -31,6 +31,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.LoginDSM" >
         <activity
+            android:name="com.example.login_dsm.AddSupplier"
+            android:exported="false" />
+        <activity
             android:name="com.example.login_dsm.InvoiceRegister"
             android:exported="false" />
         <activity
@@ -40,13 +43,7 @@
             android:name="com.example.login_dsm.InvoiceActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.login_dsm.AddInvoiceActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.login_dsm.SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.login_dsm.MainActivity"
+            android:name="com.example.login_dsm.SupplierActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,6 +51,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.login_dsm.AddInvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.login_dsm.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.login_dsm.MainActivity"
+            android:exported="false" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
