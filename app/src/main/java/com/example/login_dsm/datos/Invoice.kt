@@ -14,6 +14,7 @@ class Invoice {
     var key: String? = null
     var tipoMov: String? = null
     var userID: String? = null
+    var userID: String? = null
     var inv: MutableMap<String, Boolean> = HashMap()
 
     constructor() {}
