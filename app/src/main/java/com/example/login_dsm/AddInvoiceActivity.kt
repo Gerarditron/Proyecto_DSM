@@ -125,42 +125,51 @@ class AddInvoiceActivity : AppCompatActivity() {
         edtConcepto = findViewById<EditText>(R.id.edtConcepto)
         edtTotal = findViewById<EditText>(R.id.edtTotal)
         edtfoto = findViewById<EditText>(R.id.edtfoto)
-
-        val edtNumero = findViewById<EditText>(R.id.edtNumero)
-        val edtTipo = findViewById<EditText>(R.id.edtTipo)
-        val edtFecha = findViewById<EditText>(R.id.edtFecha)
-        val edtCliente = findViewById<EditText>(R.id.edtCliente)
-        val edtConcepto = findViewById<EditText>(R.id.edtConcepto)
-        val edtTotal = findViewById<EditText>(R.id.edtTotal)
-        val edtfoto = findViewById<EditText>(R.id.edtfoto)
-
+        rdPost = findViewById(R.id.rdPost)
+        rdPay = findViewById<RadioButton>(R.id.rdPayment)
+        var tipoMov : String
+        
         // Obtención de datos que envia actividad anterior
         val datos: Bundle? = intent.getExtras()
         if (datos != null) {
             key = datos.getString("key").toString()
-        }
-        if (datos != null) {
             edtNumero.setText(intent.getStringExtra("numero").toString())
-        }
-        if (datos != null) {
             edtTipo.setText(intent.getStringExtra("tipo").toString())
-        }
-        if (datos != null) {
             edtFecha.setText(intent.getStringExtra("fecha").toString())
-        }
-        if (datos != null) {
             edtCliente.setText(intent.getStringExtra("cliente").toString())
-        }
-        if (datos != null) {
             edtConcepto.setText(intent.getStringExtra("concepto").toString())
-        }
-        if (datos != null) {
             edtTotal.setText(intent.getStringExtra("total").toString())
-        }
-        if (datos != null) {
-            edtfoto.setText(link.toString())
-        }
-        if (datos != null) {
+            edtfoto.setText(intent.getStringExtra("foto").toString())
+            tipoMov = intent.getStringExtra("tipoMov").toString()
+            //Si es una transferencia no sera capaz de cambiar el proveedor y tampoco el tipo de movimiento, porque fue hecho con otro usuario
+            if (intent.getStringExtra("tipo").toString() == getString(R.string.tipo_transfer_value)){
+                edtTipo.isEnabled = false
+                edtTipo.inputType = InputType.TYPE_NULL
+                edtTipo.setTextColor(getColor(R.color.black))
+                txtTipFact.isEnabled = false
+                txtTipFact.boxBackgroundColor = ContextCompat.getColor(this, R.color.colorBox_unavailable)
+                if(tipoMov == "POST"){
+                    rdPost.isChecked = true
+                } else {
+                    rdPay.isChecked = true
+                }
+                rdPost.isEnabled = false
+                rdPay.isEnabled = false
+                rdPay.setTextColor(getColor(R.color.colorDarkBlue_unavailable))
+                rdPost.setTextColor(getColor(R.color.colorDarkBlue_unavailable))
+            }
+
+            //Por defecto si debe seleccionar el tipo de movimiento que se hizo
+            if(tipoMov == "POST"){
+                rdPost.isChecked = true
+                rdPay.isChecked = false
+            } else {
+                rdPost.isChecked = false
+                rdPay.isChecked = true
+            }
+
+
+            //Log.d("EDIT",tipoMov)
             accion = datos.getString("accion").toString()
         }
 
@@ -177,11 +186,12 @@ class AddInvoiceActivity : AppCompatActivity() {
         val foto: String = link.toString()
         val tipoMov: String? = tipoMovSel
         val userID: String = FirebaseAuth.getInstance().currentUser?.uid.toString()
-
+        //Generando un codigo unico para cada factura
+        val invoiceID : String = generateUniqueCode(10)
         database=FirebaseDatabase.getInstance().getReference("invoices")
 
         // Se forma objeto producto
-        val invoice = Invoice(numero, tipo, fecha, cliente, concepto, total, foto, tipoMov, userID)
+        val invoice = Invoice(numero, tipo, fecha, cliente, concepto, total, foto, tipoMov, userID, invoiceID)
 
         if (accion == "a") { //Agregar registro
             database.child(numero).setValue(invoice).addOnSuccessListener {
@@ -227,7 +237,18 @@ class AddInvoiceActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
+    fun generateUniqueCode(length: Int): String {
+        val allowedChars = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz0123456789"
+        val sb = StringBuilder(length)
+        val random = Random()
 
+        while (sb.length < length) {
+            val index = (random.nextFloat() * allowedChars.length).toInt()
+            sb.append(allowedChars[index])
+        }
+
+        return sb.toString()
+    }
 
 
 }
