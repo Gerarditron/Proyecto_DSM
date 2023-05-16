@@ -3,7 +3,7 @@ package com.example.login_dsm.datos
 class Invoice {
     fun key(key: String?) {
     }
-
+    var invoiceID: String? = null
     var numero: String? = null
     var tipo: String? = null
     var fecha: String? = null
@@ -13,7 +13,6 @@ class Invoice {
     var total: String? = null
     var key: String? = null
     var tipoMov: String? = null
-    var userID: String? = null
     var userID: String? = null
     var inv: MutableMap<String, Boolean> = HashMap()
 
