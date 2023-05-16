@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtCorreoSearchBox" type="id" />
+    <item name="txtCorreoSearch" type="id" />
+    <item name="btnSearchEmailTransfer" type="id" />
+    <item name="btnSearchEmailCancel" type="id" />
+</resources>

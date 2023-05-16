@@ -46,6 +46,7 @@
     <string name="label_main_opc4">AGREGAR\nFACTURAS</string>
     <string name="label_main_opc5">HACER UNA\nTRANSACCIÓN</string>
     <string name="label_main_opc6">EXTRA OPC</string>
+    <string name="toast_main_userAdded">Usuario Agregado a la Base de Datos</string>
     <!--activity invoice-->
     <string name="label_whatdoyouneed">¿Que desea hacer?</string>
     <!--activtiy add invoice-->
@@ -53,7 +54,7 @@
     <string name="label_addinvoice_btnUploadImg">AGREGAR IMAGEN FACTURA</string>
     <string name="label_addinvoice_imgLink">Ingrese enlace de la imagen</string>
     <string name="label_addinvoice_numFact">Num. Factura</string>
-    <string name="label_addinvoice_dateFact">Fecha Factura</string>
+    <string name="label_addinvoice_dateFact">Fecha Factura (DD/MM/AAAA)</string>
     <string name="label_addinvoice_typeFact">Tipo Factura</string>
     <string name="label_addinvoice_provFact">Proveedor</string>
     <string name="label_addinvoice_descripFact">Concepto de la Factura</string>
@@ -76,6 +77,36 @@
     <string name="label_adapter_fact_client">Cliente: </string>
     <string name="label_adapter_fact_descrip">Descripción: </string>
     <string name="label_adapter_fact_total">Monto: </string>
+    <!--activity search email-->
+    <string name="label_searchEmail_title">Búsqueda por Correo</string>
+    <string name="label_searchEmail_subtitle">Digite el corero eléctronico al que desea hacerle una transferencia</string>
+    <string name="label_hint_searchEmail">Digite el correo que desea buscar</string>
+    <string name="button_searchEmail">BUSCAR</string>
+    <string name="button_searchEmail_cancel">CANCELAR</string>
+    <string name="toast_searchEmail_emailempty">¡Digite un correo porfavor!</string>
+    <string name="toast_searchEmail_emailnotvalid">¡Digite un correo válido!</string>
+    <string name="toast_searchEmail_emailloggedin">No puedes hacerle una transferencia a la misma cuenta de correo con la que estas ingresado en la aplicación :(</string>
+    <string name="toast_searchEmail_emailnotfound">El correo que busca no existe en la aplicación :(</string>
+    <string name="toast_searchEmail_emailfound">¡Correo encontrado con éxito!</string>
+    <!--activity trasnfer-->
+    <string name="label_trasnfer_title">TRANSFERENCIA</string>
+    <string name="label_transfer_card_title">Está a punto de hacerle una transferencia al siguiente usuario:</string>
+    <string name="label_transfer_card_user">USUARIO: </string>
+    <string name="label_transfer_button_uploadimage">AGREGAR IMAGEN TRANSACCIÓN</string>
+    <string name="label_transfer_button_openimage">ABRIR IMAGEN TRANSACCIÓN</string>
+    <string name="label_transfer_descrip">Descripción de la transferencia</string>
+    <string name="label_transfer_addTransx">TRANSFERIR</string>
+    <string name="tipo_transfer_value">TRANSFERENCIA</string>
+    <string name="toast_addtransfer_uploadSuccess">¡La Transferencia fue hecha correctamente!</string>
+    <string name="toast_addtransfer_uploadFailed">¡La Transferencia no fue hecha debido a un error!</string>
+    <!--Validar Campos-->
+    <string name="toast_numFact_empty">¡El "Número de Factura" esta vacío!</string>
+    <string name="toast_dateFact_empty">¡La "Fecha de Factura" esta vacía!</string>
+    <string name="toast_provider_empty">¡El "Proveedor de la Factura" esta vacío!</string>
+    <string name="toast_description_empty">¡La "Descripción de la Factura" esta vacía!</string>
+    <string name="toast_value_empty">¡El "Monto de la Factura" esta vacío!</string>
+    <string name="toast_date_notvalid">¡Digite un formato de fecha válido!</string>
+    <string name="toast_value_notvalid">¡Digite un monto con dos decimales!</string>
     <!--EXTRAS-->
     <string name="label_button1">Eliminar</string>
     <string name="label_button2">Cancelar</string>

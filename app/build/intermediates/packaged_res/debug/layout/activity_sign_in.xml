@@ -98,14 +98,14 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/SignInFacebookBtn"
+            android:id="@+id/SignInGithubBtn"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@mipmap/facebook"
+            android:drawableLeft="@drawable/git32"
             android:paddingStart="20dp"
-            android:text="@string/button_facebook_sign_in"
+            android:text="GITHUB"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="@color/black"

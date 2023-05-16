@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.disklrucache.DiskLruCache.Value
 import com.example.login_dsm.datos.Invoice
+import com.example.login_dsm.transfer.SearchemailActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnFactHistory: ImageView
     private lateinit var lbAccountValue: TextView
     private lateinit var lbEmailLoggedIn: TextView
-
+    private lateinit var btnMakeTransfer: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         btnFactHistory  = findViewById(R.id.imgHistoryMov)
         lbEmailLoggedIn = findViewById(R.id.lbEmailLoggedIn)
         lbAccountValue = findViewById(R.id.lbAccountValue)
+        btnMakeTransfer = findViewById(R.id.imgMakeTransf)
 
         //Autenticandose con Firebase
         auth = FirebaseAuth.getInstance()
@@ -108,7 +110,10 @@ class MainActivity : AppCompatActivity() {
 
 
         //Abriendo el Hacer una Transaccion
-
+        btnMakeTransfer.setOnClickListener {
+            val intent = Intent(this, SearchemailActivity::class.java)
+            startActivity(intent)
+        }
 
 
         //Abriendo la opcion extra

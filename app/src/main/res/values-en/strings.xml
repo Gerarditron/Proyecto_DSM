@@ -47,6 +47,7 @@
     <string name="label_main_opc4">ADD\nRECEIPT</string>
     <string name="label_main_opc5">MAKE A\nTRANSFER</string>
     <string name="label_main_opc6">EXTRA OPC</string>
+    <string name="toast_main_userAdded">User added to the database</string>
     <!--activity invoice-->
     <string name="label_whatdoyouneed">What do you want to do?</string>
     <!--activtiy add invoice-->
@@ -54,7 +55,7 @@
     <string name="label_addinvoice_btnUploadImg">UPLOAD IMAGE</string>
     <string name="label_addinvoice_imgLink">Add Image Link</string>
     <string name="label_addinvoice_numFact">Invoice Number</string>
-    <string name="label_addinvoice_dateFact">Invoice Date</string>
+    <string name="label_addinvoice_dateFact">Invoice Date (DD/MM/YYYY)</string>
     <string name="label_addinvoice_typeFact">Invoice Type</string>
     <string name="label_addinvoice_provFact">Supplier</string>
     <string name="label_addinvoice_descripFact">Description</string>
@@ -77,6 +78,36 @@
     <string name="label_adapter_fact_client">Client:</string>
     <string name="label_adapter_fact_descrip">Description:</string>
     <string name="label_adapter_fact_total">Value:</string>
+    <!--activity search email-->
+    <string name="label_searchEmail_title">Search By Email</string>
+    <string name="label_searchEmail_subtitle">Please enter the email of the user you want to transfer to</string>
+    <string name="label_hint_searchEmail">Enter the email you want to search</string>
+    <string name="button_searchEmail">Search</string>
+    <string name="button_searchEmail_cancel">CANCEL</string>
+    <string name="toast_searchEmail_emailempty">Enter an Email please!</string>
+    <string name="toast_searchEmail_emailnotvalid">Enter a valid Email</string>
+    <string name="toast_searchEmail_emailloggedin">You can\'t make a transfer to the same email account you\'re logged in with :(</string>
+    <string name="toast_searchEmail_emailnotfound">The Email you\'re searching for doesn\'t exists in the app :(</string>
+    <string name="toast_searchEmail_emailfound">Email found successfully!</string>
+    <!--activity trasnfer-->
+    <string name="label_trasnfer_title">TRANSFER</string>
+    <string name="label_transfer_card_title">Your about to make a transfer to this user:</string>
+    <string name="label_transfer_card_user">USER: </string>
+    <string name="label_transfer_button_uploadimage">UPLOAD TRANSFER IMAGE</string>
+    <string name="label_transfer_button_openimage">OPEN TRANSFER IMAGE</string>
+    <string name="label_transfer_descrip">Concept of the transaction</string>
+    <string name="label_transfer_addTransx">TRANSFER</string>
+    <string name="tipo_transfer_value">TRANSFER</string>
+    <string name="toast_addtransfer_uploadSuccess">The Transfer was made successfully!</string>
+    <string name="toast_addtransfer_uploadFailed">The Transfer wasn\'t finished due to an error!</string>
+    <!--Validar Campos-->
+    <string name="toast_numFact_empty">The "Invoice Number" is empty!</string>
+    <string name="toast_dateFact_empty">The "Invoice Date" is empty!</string>
+    <string name="toast_provider_empty">The "Invoice Provider" is empty!</string>
+    <string name="toast_description_empty">The "Invoice Number" is empty!</string>
+    <string name="toast_value_empty">The "Invoice Number" is empty!</string>
+    <string name="toast_date_notvalid">Enter a valid "Invoice Date"!</string>
+    <string name="toast_value_notvalid">Enter a "Invoice Value" with two decimals!</string>
     <!--EXTRAS-->
     <string name="label_button1">Delete</string>
     <string name="label_button2">Cancel</string>
