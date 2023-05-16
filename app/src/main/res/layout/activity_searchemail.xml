@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".transfer.SearchemailActivity">
+
+    <TextView
+        android:id="@+id/lbSearchCorreoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/label_searchEmail_title"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_searchEmail_subtitle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="80dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtCorreoSearchBox"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCorreoSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/label_hint_searchEmail"
+            android:textColor="#404040" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSearchEmailTransfer"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/button_searchEmail" />
+
+    <Button
+        android:id="@+id/btnSearchEmailCancel"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/button_searchEmail_cancel" />
+
+
+</LinearLayout>
