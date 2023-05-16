@@ -26,7 +26,7 @@ class AdapterInvoice(private val context: Activity, var invoices: List<Invoice>)
         val tvCliente = rowview.findViewById<TextView>(R.id.tvCliente)
         val tvConcepto = rowview.findViewById<TextView>(R.id.tvConcepto)
         val tvTotal = rowview.findViewById<TextView>(R.id.tvTotal)
-        //val tvFoto = rowview.findViewById<ImageView>(R.id.ivFotoProd)
+        val tvFoto = rowview.findViewById<ImageView>(R.id.ivFotoProd)
         //Tipo de Movimiento CARGO o ABONO
         var tvTipoMov : String? = null
         tvTipoMov = invoices[position].tipoMov.toString()
@@ -36,7 +36,7 @@ class AdapterInvoice(private val context: Activity, var invoices: List<Invoice>)
         tvTipo.text = invoices[position].tipo
         tvCliente.text = invoices[position].cliente
         tvConcepto.text = invoices[position].concepto
-        //Glide.with(rowview).load(invoices[position].foto).into(tvFoto)
+        Glide.with(rowview).load(invoices[position].foto).into(tvFoto)
         tvTotal.text = "$ " + invoices[position].total
         //Agregando color al total si es un ABONO o un CARGO
         if (tvTipoMov == "PAY") {

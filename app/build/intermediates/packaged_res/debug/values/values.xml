@@ -3,8 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="celeste">#62CDFF</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="colorBox_unavailable">#A5A8B7 </color>
     <color name="colorDarkBlue">#1A237E</color>
+    <color name="colorDarkBlue_unavailable">#92A1F1</color>
     <color name="colorGreen">#00C853</color>
+    <color name="colorHintText">#404040</color>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorPurple">#6A1B9A</color>
@@ -24,6 +27,8 @@
     <string name="buttonLabel_signIn_sign_up">INICIA SESIÓN</string>
     <string name="button_facebook_sign_in">FACEBOOK</string>
     <string name="button_google_sign_in">GOOGLE</string>
+    <string name="button_searchEmail">BUSCAR</string>
+    <string name="button_searchEmail_cancel">CANCELAR</string>
     <string name="confirm_password_sign_up">Confirma tu contraseña…</string>
     <string name="default_web_client_id" translatable="false">880073564805-k36pbeavh3tpdm1uq05u40q9rg8g3sjb.apps.googleusercontent.com</string>
     <string name="email_sign_in">Correo</string>
@@ -49,7 +54,7 @@
     <string name="label_addinvoice_addFact">AGREGAR FACTURA</string>
     <string name="label_addinvoice_btnUploadImg">AGREGAR IMAGEN FACTURA</string>
     <string name="label_addinvoice_cancelFact">CANCELAR</string>
-    <string name="label_addinvoice_dateFact">Fecha Factura</string>
+    <string name="label_addinvoice_dateFact">Fecha Factura (DD/MM/AAAA)</string>
     <string name="label_addinvoice_descripFact">Concepto de la Factura</string>
     <string name="label_addinvoice_imgLink">Ingrese enlace de la imagen</string>
     <string name="label_addinvoice_numFact">Num. Factura</string>
@@ -62,6 +67,7 @@
     <string name="label_button1">Eliminar</string>
     <string name="label_button2">Cancelar</string>
     <string name="label_buttonSignUp_sign_in">REGISTRATE</string>
+    <string name="label_hint_searchEmail">Digite el correo que desea buscar</string>
     <string name="label_main_account_title">VALOR DE CUENTA DE REGISTROS</string>
     <string name="label_main_email_title">CORREO: </string>
     <string name="label_main_mov_title">MOVIMIENTOS</string>
@@ -70,14 +76,23 @@
     <string name="label_main_opc3">ESTADISTICAS</string>
     <string name="label_main_opc4">AGREGAR\nFACTURAS</string>
     <string name="label_main_opc5">HACER UNA\nTRANSACCIÓN</string>
-    <string name="label_main_opc6">PROVEEDORES</string>
+    <string name="label_main_opc6">EXTRA OPC</string>
     <string name="label_main_title">FACT-APP</string>
     <string name="label_main_transf_title">TRANSFERENCIAS</string>
     <string name="label_main_user_title">USUARIO: </string>
     <string name="label_record_deleted">¡Registro Eliminado!</string>
     <string name="label_record_deleted_canel">¡Operación de borrado cancelada!</string>
+    <string name="label_searchEmail_subtitle">Digite el corero eléctronico al que desea hacerle una transferencia</string>
+    <string name="label_searchEmail_title">Búsqueda por Correo</string>
     <string name="label_sign_in">¿No tienes cuenta todavía?</string>
     <string name="label_sign_up">¿Ya posees una cuenta?</string>
+    <string name="label_transfer_addTransx">TRANSFERIR</string>
+    <string name="label_transfer_button_openimage">ABRIR IMAGEN TRANSACCIÓN</string>
+    <string name="label_transfer_button_uploadimage">AGREGAR IMAGEN TRANSACCIÓN</string>
+    <string name="label_transfer_card_title">Está a punto de hacerle una transferencia al siguiente usuario:</string>
+    <string name="label_transfer_card_user">USUARIO: </string>
+    <string name="label_transfer_descrip">Descripción de la transferencia</string>
+    <string name="label_trasnfer_title">TRANSFERENCIA</string>
     <string name="label_whatdoyouneed">¿Que desea hacer?</string>
     <string name="menu_close_session">Cerrar Sesión</string>
     <string name="msg_singin_commonerror">¡Algo salió mal, inténtelo de nuevo!</string>
@@ -97,6 +112,7 @@
     <string name="spinner_addinvoice_payment">ABONO</string>
     <string name="spinner_addinvoice_post">CARGO</string>
     <string name="spinner_hint_paymentPost">Seleccione el Tipo de Movimiento</string>
+    <string name="tipo_transfer_value">TRANSFERENCIA</string>
     <string name="title_sign_in">Ingresa tu usuario</string>
     <string name="title_sign_up">Registra tu usuario</string>
     <string name="toast_addinvoice_foto_upload">¡La imagen se subió correctamente!</string>
@@ -110,6 +126,21 @@
     <string name="toast_addsupplier_updateSuccessful">¡Se actualizó el Registro con éxito!</string>
     <string name="toast_addsupplier_uploadFailed">¡Ocurrió un error guardando el proveedor!</string>
     <string name="toast_addsupplier_uploadSuccess">¡Se guardo con éxito el proveedor!</string>
+    <string name="toast_addtransfer_uploadFailed">¡La Transferencia no fue hecha debido a un error!</string>
+    <string name="toast_addtransfer_uploadSuccess">¡La Transferencia fue hecha correctamente!</string>
+    <string name="toast_dateFact_empty">¡La "Fecha de Factura" esta vacía!</string>
+    <string name="toast_date_notvalid">¡Digite un formato de fecha válido!</string>
+    <string name="toast_description_empty">¡La "Descripción de la Factura" esta vacía!</string>
+    <string name="toast_main_userAdded">Usuario Agregado a la Base de Datos</string>
+    <string name="toast_numFact_empty">¡El "Número de Factura" esta vacío!</string>
+    <string name="toast_provider_empty">¡El "Proveedor de la Factura" esta vacío!</string>
+    <string name="toast_searchEmail_emailempty">¡Digite un correo porfavor!</string>
+    <string name="toast_searchEmail_emailfound">¡Correo encontrado con éxito!</string>
+    <string name="toast_searchEmail_emailloggedin">No puedes hacerle una transferencia a la misma cuenta de correo con la que estas ingresado en la aplicación :(</string>
+    <string name="toast_searchEmail_emailnotfound">El correo que busca no existe en la aplicación :(</string>
+    <string name="toast_searchEmail_emailnotvalid">¡Digite un correo válido!</string>
+    <string name="toast_value_empty">¡El "Monto de la Factura" esta vacío!</string>
+    <string name="toast_value_notvalid">¡Digite un monto con dos decimales!</string>
     <string name="welcome_sign_in">Bienvenido</string>
     <string name="welcome_sign_up">Únete a nuestra aplicación</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

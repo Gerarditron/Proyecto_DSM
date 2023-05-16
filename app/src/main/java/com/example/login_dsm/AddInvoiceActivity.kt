@@ -29,6 +29,10 @@ import java.util.HashMap
 import android.widget.*
 import android.content.Context
 import android.provider.MediaStore.Audio.Radio
+import android.text.InputType
+import androidx.core.content.ContextCompat
+import com.google.android.material.textfield.TextInputLayout
+import java.util.Random
 
 class AddInvoiceActivity : AppCompatActivity() {
     private var edtNumero: EditText? = null
@@ -57,9 +61,6 @@ class AddInvoiceActivity : AppCompatActivity() {
     private val database1 = Firebase.database
     val myRef = database1.getReference("invoicesPictures")
     private lateinit var binding: ActivityAddInvoiceBinding
-    private lateinit var rdGroup: RadioGroup
-    private lateinit var rdPay: RadioButton
-    private lateinit var rdPost: RadioButton
     private  var tipoMovSel: String = "POST"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -137,19 +138,19 @@ class AddInvoiceActivity : AppCompatActivity() {
         val datos: Bundle? = intent.getExtras()
         if (datos != null) {
             key = datos.getString("key").toString()
-            edtNumero.setText(intent.getStringExtra("numero").toString())
-            edtTipo.setText(intent.getStringExtra("tipo").toString())
-            edtFecha.setText(intent.getStringExtra("fecha").toString())
-            edtCliente.setText(intent.getStringExtra("cliente").toString())
-            edtConcepto.setText(intent.getStringExtra("concepto").toString())
-            edtTotal.setText(intent.getStringExtra("total").toString())
-            edtfoto.setText(intent.getStringExtra("foto").toString())
+            edtNumero?.setText(intent.getStringExtra("numero").toString())
+            edtTipo?.setText(intent.getStringExtra("tipo").toString())
+            edtFecha?.setText(intent.getStringExtra("fecha").toString())
+            edtCliente?.setText(intent.getStringExtra("cliente").toString())
+            edtConcepto?.setText(intent.getStringExtra("concepto").toString())
+            edtTotal?.setText(intent.getStringExtra("total").toString())
+            edtfoto?.setText(intent.getStringExtra("foto").toString())
             tipoMov = intent.getStringExtra("tipoMov").toString()
             //Si es una transferencia no sera capaz de cambiar el proveedor y tampoco el tipo de movimiento, porque fue hecho con otro usuario
             if (intent.getStringExtra("tipo").toString() == getString(R.string.tipo_transfer_value)){
-                edtTipo.isEnabled = false
-                edtTipo.inputType = InputType.TYPE_NULL
-                edtTipo.setTextColor(getColor(R.color.black))
+                edtTipo?.isEnabled = false
+                edtTipo?.inputType = InputType.TYPE_NULL
+                edtTipo?.setTextColor(getColor(R.color.black))
                 txtTipFact.isEnabled = false
                 txtTipFact.boxBackgroundColor = ContextCompat.getColor(this, R.color.colorBox_unavailable)
                 if(tipoMov == "POST"){

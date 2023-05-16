@@ -23,8 +23,6 @@ class TransferActivity : AppCompatActivity() {
 
     private lateinit var lbEmailReceiver: TextView
     private lateinit var lbNameReceiver: TextView
-    private lateinit var btnUploadTransfImg : Button
-    private lateinit var btnOpenTransfImg: Button
     private lateinit var edtNumero: EditText
     private lateinit var edtTipo: String //Siempre se declararan como tipo TRANSFERENCIA
     private lateinit var edtFecha: EditText
@@ -53,8 +51,6 @@ class TransferActivity : AppCompatActivity() {
         setContentView(R.layout.activity_transfer)
 
         //Definiendo los parametros inidicales y por defecto de la actividad
-        btnUploadTransfImg = findViewById(R.id.btnUploadTransfImg)
-        btnOpenTransfImg = findViewById(R.id.btnOpenTransfImg)
         edtNumero = findViewById(R.id.edtNumero)
         lbEmailReceiver = findViewById(R.id.lbEmailReceiver)
         lbNameReceiver = findViewById(R.id.lbNameReceiver)
@@ -86,18 +82,6 @@ class TransferActivity : AppCompatActivity() {
             finish()
         }
 
-
-        btnUploadTransfImg.setOnClickListener{
-            fun fileUpload() {
-                val intent = Intent(Intent.ACTION_GET_CONTENT)
-                intent.type = "*/*"
-                startActivityForResult(intent, File)
-            }
-        }
-
-        btnOpenTransfImg.setOnClickListener{
-            Toast.makeText(this,"ABRIR IMAGEN... ESTA EN CONSTRUCCION....",Toast.LENGTH_SHORT).show()
-        }
 
         btnAddTransf.setOnClickListener{
             //Llamando a la funcion que hara la transferencias
@@ -139,8 +123,7 @@ class TransferActivity : AppCompatActivity() {
                         //Declarandolo en la variable privada
                         uploadedImgUri = FileUri.toString()
                         //Habilitando el boton de verificar imagen
-                        btnOpenTransfImg.isEnabled = true
-                        btnOpenTransfImg.setBackgroundColor(getColor(R.color.colorDarkBlue))
+
                     }
                 }
 
@@ -200,6 +183,9 @@ class TransferActivity : AppCompatActivity() {
             // Agregando una factura al usuario que envia
             myInv.child(invoiceIDSend).setValue(invoiceSend).addOnSuccessListener {
                 Toast.makeText(this,getString(R.string.toast_addtransfer_uploadSuccess), Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
             }.addOnFailureListener{
                 Toast.makeText(this,getString(R.string.toast_addtransfer_uploadFailed), Toast.LENGTH_SHORT).show()
             }

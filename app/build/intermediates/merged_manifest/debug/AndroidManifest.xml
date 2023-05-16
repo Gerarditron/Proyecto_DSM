@@ -44,6 +44,12 @@
             android:exported="false" />
         <activity
             android:name="com.example.login_dsm.SupplierActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.login_dsm.AddInvoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.login_dsm.SignInActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,13 +58,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.login_dsm.AddInvoiceActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.login_dsm.SignInActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.login_dsm.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.login_dsm.transfer.SearchemailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.login_dsm.transfer.TransferActivity"
             android:exported="false" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
